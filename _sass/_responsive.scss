@@ -1,0 +1,39 @@
+// Responsive
+
+@mixin breakpoint($point) {
+  @if $point == lg {
+    @media (min-width: $screen-lg-min) { @content; }
+  }
+  @else if $point == md {
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { @content; }
+  }
+  @else if $point == sm {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { @content; }
+  }
+  @else if $point == xs {
+    @media (max-width: $screen-xs-max) { @content; }
+  }
+  @else if $point == nano {
+    @media (max-width: 320px) { @content; }
+  }
+}
+
+/*
+.navbar-brand {
+  @include breakpoint(nano){
+    &:after { content: " - nano "; }
+  }
+  @include breakpoint(xs){
+    &:after { content: " - xs "; }
+  }
+  @include breakpoint(sm){
+    &:after { content: " - sm "; }
+  }
+  @include breakpoint(md){
+    &:after { content: " - md "; }
+  }
+  @include breakpoint(lg){
+    &:after { content: " - lg "; }
+  }
+}
+*/

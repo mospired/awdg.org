@@ -1,0 +1,29 @@
+---
+layout: default
+title: Welcome Atlanta Webbies!
+---
+
+<div class="block">
+  <h1>Atlanta Web Design Group</h1>
+  <p>The group for Atlanta area people who makes Websites. Markup, style, code, typography, SEO, e-commerce, Web apps, and social networking are all valid topics here. We aim to provide a place for Web professionals to meet new people, exchange ideas, learn new things, and have a little fun.</p>
+</div>
+
+<div class="block">
+  <h2><i class="fa fa-calendar"></i> Upcoming Events</h2>
+  <div class="event-list">
+  {% for event in site.data.events %}
+    {% include event-list-entry.html %}
+  {% endfor %}
+  </div>
+</div>
+
+<div class="block">
+  <h3><i class="fa fa-beer"></i> Join us for Happy Hour</h3>
+  <div class="event-list">
+    <ul>
+    {% for event in site.data.happyhours %}
+    <li><a href="{{ event.url }}">{{ event.title }}</a> - {{ event.date }} - {{ event.location }}</li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>
