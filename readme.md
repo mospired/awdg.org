@@ -1,10 +1,4 @@
-AWDG
-Setting up the project.
+AWDG Member Website
+========
 
-This is running on Jekyll, Bootstrap Sass, and Github Pages.
-
-
-
-http://davidpots.com/blog/jekyll-github-pages-compass/
-
-bower install git://github.com/twbs/bootstrap-sass.git
+A simple website for AWDG members.
