@@ -53,10 +53,10 @@ nav {
 
 .event-list {
   .event {
-    /*@include make-row();*/
     .event-info {
       border-bottom: 1px solid #ddd;
       margin-top:1em;
+      margin-left: -15px;
       margin-bottom:1em;
       padding-bottom: 1.5em;
       @include make-sm-column(12);
