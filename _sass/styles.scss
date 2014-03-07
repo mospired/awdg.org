@@ -47,19 +47,34 @@ nav {
   }
 }
 
+.block {
+  clear:both;
+}
 
 ////////////////////////////
 // Event Lists
 
 .event-list {
+  @include make-sm-column(10);
   .event {
-    .event-info {
-      border-bottom: 1px solid #ddd;
+    @include make-row();
+    border-bottom: 1px solid #ddd;
       margin-top:1em;
       margin-left: -15px;
       margin-bottom:1em;
       padding-bottom: 1.5em;
-      @include make-sm-column(12);
+    .event-photo {
+      @include make-sm-column(2);
+      img {
+        @extend .img-responsive;
+        @extend .img-rounded;
+      }
+    }
+    .event-info {
+      @include make-sm-column(10);
+      h3 {
+        margin-top: 0;
+      }
     }
   }
 }
