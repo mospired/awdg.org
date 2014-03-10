@@ -55,6 +55,20 @@
             <a class="twitter-timeline" href="https://twitter.com/awdg" data-widget-id="434461181181325312">Tweets by @awdg</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
           </div>
+          <div class="sidebar-sponsor-list">
+            <h4>Support Our Sponsors</h4>
+            {% for sponsor in site.data.sponsors %}
+            <div class="sidebar-sponsor">
+              <a class="pull-left" href="{{ sponsor.url }}">
+                <img class="media-object" src="{{ site.baseurl }}/img/sponsor-assets/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+              </a>
+              <div class="media-body">
+                <h5 class="media-heading"><a href="{{ sponsor.url }}">{{ sponsor.name }}</a></h5>
+                <p>{{ sponsor.tagline }}</p>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
           <div class="block offsite-buttons">
             <a href="http://twitter.com/awdg" class="btn btn-default"><i class="fa fa-twitter"></i> Follow Us on Twitter</a>
             <a href="https://www.facebook.com/atlantaweb" class="btn btn-default"><i class="fa fa-facebook"></i> Join Us on Facebook</a>
@@ -73,7 +87,7 @@
           <a href="{{ site.baseurl }}/join/">Join Us</a> &middot;
           <a href="{{ site.baseurl }}/speak/">Submit a Talk</a> &middot;
           <a href="{{ site.baseurl }}/sponsor/">Sponsor an Event</a>
-           |
+          |
           <a href="https://twitter.com/awdg">Twitter</a> &middot;
           <a href="https://www.facebook.com/atlantaweb">Facebook</a> &middot;
           <a href="http://www.linkedin.com/groups/Atlanta-Web-Design-Group-1770134">LinkedIn</a>
