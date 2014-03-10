@@ -51,6 +51,17 @@ nav {
   clear:both;
 }
 
+.sidebar-sponsor-list {
+  margin:2em 0;
+  .sidebar-sponsor {
+    @extend .media;
+    img {
+      max-width: 90px;
+    }
+  }
+}
+
+
 ////////////////////////////
 // Event Lists
 

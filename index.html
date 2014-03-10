@@ -22,7 +22,7 @@ title: Welcome Atlanta Webbies!
   <div class="event-list">
     <ul>
     {% for event in site.data.happyhours %}
-    <li><a href="{{ event.url }}">{{ event.title }}</a> - {{ event.date }} - {{ event.location }}</li>
+    <li><a href="{{ event.url }}">{{ event.title }}</a> - {{ event.date | date: "%-I:%M%p - %a, %b %d" }} - {{ event.location }}</li>
     {% endfor %}
     </ul>
   </div>
