@@ -18,6 +18,9 @@
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css?v=2">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <script type="text/javascript">var switchTo5x=true;</script>
+  <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  <script type="text/javascript">stLight.options({publisher: "9b4dc877-e06a-4ead-a738-a2474ee9b347", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 </head>
 <body>
 
@@ -50,11 +53,6 @@
 
         </section>
         <section id="side">
-          <h4>Connect with Us</h4>
-          <div class="hidden-xs">
-            <a class="twitter-timeline" href="https://twitter.com/awdg" data-widget-id="434461181181325312">Tweets by @awdg</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          </div>
           <div class="sidebar-sponsor-list">
             <h4>Support Our Sponsors</h4>
             {% for sponsor in site.data.sponsors %}
@@ -103,6 +101,9 @@
 
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  {% if page.home %}
+  <script src="/js/api.js"></script>
+  {% endif %}
   {% if page.stripe %}
   <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
   <script type="text/javascript">
