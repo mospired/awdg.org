@@ -14,9 +14,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="google-site-verification" content="W5jshkeh4LiPKHpkOM6qfcJbk50EizTSBE6NOnRMWbw">
   <link rel='canonical' href='http://awdg.org'>
-  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/styles.css?v=2">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/css/styles.css?v=2">
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <script type="text/javascript">var switchTo5x=true;</script>
   <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
@@ -34,13 +34,13 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a id="brand" href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/img/awdg_brand.png" alt="Atlanta Web Design Group"></a>
+          <a id="brand" href="/"><img src="/img/awdg_brand.png" alt="Atlanta Web Design Group"></a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav ">
-            <li{% if page.pid == 'speak' %} class="active"{% endif %}><a href="{{ site.baseurl }}/speak/">Speak at an Event</a></li>
-            <li{% if page.pid == 'sponsor' %} class="active"{% endif %}><a href="{{ site.baseurl }}/sponsor/">Become a Sponsor</a></li>
-            <li{% if page.pid == 'join' %} class="active"{% endif %}><a href="{{ site.baseurl }}/join/">Join the Group</a></li>
+            <li{% if page.pid == 'speak' %} class="active"{% endif %}><a href="/speak/">Speak at an Event</a></li>
+            <li{% if page.pid == 'sponsor' %} class="active"{% endif %}><a href="/sponsor/">Become a Sponsor</a></li>
+            <li{% if page.pid == 'join' %} class="active"{% endif %}><a href="/join/">Join the Group</a></li>
           </ul>
         </div>
       </div>
@@ -58,7 +58,7 @@
             {% for sponsor in site.data.sponsors %}
             <div class="sidebar-sponsor">
               <a class="pull-left" href="{{ sponsor.url }}">
-                <img class="media-object" src="{{ site.baseurl }}/img/sponsor-assets/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
+                <img class="media-object" src="/img/sponsor-assets/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
               </a>
               <div class="media-body">
                 <h5 class="media-heading"><a href="{{ sponsor.url }}">{{ sponsor.name }}</a></h5>
@@ -82,9 +82,9 @@
     <div class="container">
       <div class="sub-navigation">
         <div class="onsite-links">
-          <a href="{{ site.baseurl }}/join/">Join Us</a> &middot;
-          <a href="{{ site.baseurl }}/speak/">Submit a Talk</a> &middot;
-          <a href="{{ site.baseurl }}/sponsor/">Sponsor an Event</a>
+          <a href="/join/">Join Us</a> &middot;
+          <a href="/speak/">Submit a Talk</a> &middot;
+          <a href="/sponsor/">Sponsor an Event</a>
           |
           <a href="https://twitter.com/awdg">Twitter</a> &middot;
           <a href="https://www.facebook.com/atlantaweb">Facebook</a> &middot;
