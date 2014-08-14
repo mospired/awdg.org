@@ -7,7 +7,7 @@ author: jcornelius
 <p class="lead">Lots has happend since our last update. Great progress has been made on the website and rewards are ready to ship. Read on&hellip;</p>
 
 <h3>Website Design Comps Complete</h3>
-<p>Jason has been working hard on creating a simple and elegant system for the website. We wanted it to put content first, so the design should be spartan and simple, with a easy to use grid. These comps are not intended to be exact representations of the finished product. They are simply a showcase of the differetn design elements used in different ways so we can get a feel for how everything will come together.</p>
+<p>Jason has been working hard on creating a simple and elegant system for the website. We wanted it to put content first, so the design should be spartan and simple, with a easy to use grid. These comps are not intended to be exact representations of the finished product. They are simply a showcase of the different design elements used in different ways so we can get a feel for how everything will come together.</p>
 <p>Insipred by AWDG member Jared Ponchot&rsquo;s wonderful talk <a href="https://speakerdeck.com/jponch/designing-on-purpose-design-process-and-deliverables-in-the-responsive-age#">Designing on Purpose</a>, we&rsquo;re looking at Purpose, not preference; Priority, not placement; Systems, not pages. The idea with these comps is to guide our design of the site, not dictate it.</p>
 <h4>Home Page</h4>
 <figure>
