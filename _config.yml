@@ -1,5 +1,0 @@
-name: Atlanta Web Design Group
-markdown: redcarpet
-pygments: true
-port: 9000
-permalink: /:categories/:title.html
