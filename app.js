@@ -1,3 +1,12 @@
+'use strict';
+
+/**
+ * AWDG
+ *
+ * @copyright Atlanta Web Design Group 2014
+ *
+ */
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -8,14 +17,13 @@ var swig = require('swig');
 var fs = require('fs');
 var util = require('util');
 var _ = require('lodash');
-
-
-// Load routes
-var routes = require('./server/routes/index');
-var users = require('./server/routes/users');
-
-// buckle up express
+var root = path.normalize(__dirname);
+var env = process.env.NODE_ENV || 'development';
 var app = express();
+
+var index = require('./server/routes/index');
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'server/templates/views'));
@@ -27,11 +35,6 @@ swig.setDefaults({
     loader: swig.loaders.fs(__dirname + '/server/templates')
 });
 
-/**
- * @todo set an environment condition --
- * only disable view cache on development
- *
- */
 app.set('view cache', false);
 
 
@@ -44,7 +47,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(cookieParser());
-app.use('/', routes);
+app.use('/', index);
 
 
 app.use(express.static(path.join(__dirname, 'public')));

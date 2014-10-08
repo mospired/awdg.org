@@ -1,7 +1,9 @@
-Welcome to the awdg.org project
+Overview
+-------------------------
+
 Getting Started
 -------------------------
 
-Documentation
+Preject Requirements
 ---------------
 Head over the [wiki](https://github.com/AWDG/awdg.org/wiki)
