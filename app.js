@@ -26,13 +26,13 @@ var index = require('./server/routes/index');
 
 
 // view engine setup
-app.set('views', path.join(__dirname, 'server/templates/views'));
+app.set('views', path.join(__dirname, 'theme/templates/views'));
 app.set('view engine', 'html');
 
 app.engine('html', swig.renderFile);
 swig.setDefaults({
     cache: false,
-    loader: swig.loaders.fs(__dirname + '/server/templates')
+    loader: swig.loaders.fs(__dirname + '/theme/templates')
 });
 
 app.set('view cache', false);
