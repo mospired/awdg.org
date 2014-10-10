@@ -5,12 +5,12 @@
  *
  * @copyright Atlanta Web Design Group 2014
  *
- * Index Routes
+ * Member Routes
  */
 
 module.exports = function(app) {
-    app.get('/', function(req, res) {
-         res.render('home/index');
+    app.get('/members', function(req, res) {
+         res.render('members/index');
     });
 
 };

@@ -21,8 +21,10 @@ var root = path.normalize(__dirname);
 var env = process.env.NODE_ENV || 'development';
 var app = express();
 
-var index = require('./server/routes/index');
-
+// routes
+require('./server/routes/index')(app);
+require('./server/routes/events')(app);
+require('./server/routes/members')(app);
 
 
 // view engine setup
@@ -47,7 +49,7 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(cookieParser());
-app.use('/', index);
+
 
 
 app.use(express.static(path.join(__dirname, 'public')));
