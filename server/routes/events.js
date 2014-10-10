@@ -10,7 +10,7 @@
 
 module.exports = function(app) {
     app.get('/events', function(req, res) {
-         res.render('events/index');
+        res.render('events/list',{module:'events-list'});
     });
 
 };
