@@ -2,6 +2,7 @@
 layout: post
 title: July Progress Report
 author: jcornelius
+category: blog
 ---
 
 <p>Hey everyone, We&rsquo;re working hard on getting all the research and discussion about the website done and documented.</p>

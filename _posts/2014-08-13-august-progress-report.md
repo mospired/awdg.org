@@ -2,6 +2,7 @@
 layout: post
 title: August Progress Report
 author: jcornelius
+category: blog
 ---
 
 <p class="lead">Lots has happend since our last update. Great progress has been made on the website and rewards are ready to ship. Read on&hellip;</p>

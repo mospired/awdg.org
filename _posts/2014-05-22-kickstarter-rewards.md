@@ -2,6 +2,7 @@
 layout: post
 title: Kickstarter Rewards
 author: jcornelius
+category: blog
 ---
 
 <p>Thanks for making our Kickstarter campaign a success! We&rsquo;re very excited to finally have our own website. Big thanks to the super talented and generous <a href="https://twitter.com/jottin">Jason Ottinger</a> and <a href="https://twitter.com/johnwilliams713">John Williams</a> for their work on creating these designs.</p>

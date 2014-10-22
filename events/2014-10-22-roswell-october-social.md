@@ -2,9 +2,10 @@
 layout: social
 pid: event
 category: social
+author: jcornelius
 title: Roswell Webbie Social
 date: 2014-10-22 18:30
-author: jcornelius
+photo: socials.png
 host_name: Brad Iroff
 host_twitter: bradiroff
 host_bio: I enjoy being a father, husband, friend, web designer, entrepreneur, mountain biker, tennis player, photographer, coffee drinker & geek.

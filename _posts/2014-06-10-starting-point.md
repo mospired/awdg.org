@@ -2,6 +2,7 @@
 layout: post
 title: A Starting Point
 author: jcornelius
+category: blog
 ---
 
 <p>Here we are. This is the basis for our new website.</p>

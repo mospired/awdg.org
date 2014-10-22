@@ -8,9 +8,16 @@ pid: event
 {% capture page_date %}{{ page.date | date: '%s' | plus: 0 }}{% endcapture %}
 {% capture now %}{{ site.time | date: '%s' | plus: 0 }}{% endcapture %}
 {% if page.pid == 'event' and page_date >= now %}
-<h4><a href="{{ page.url }}"><strong>{{ page.title }}</strong></a></h4>
-<p>{{ page.date  | date: "%B %d, %Y - %-I:%M %p" }}</p>
-<p>{{ page.excerpt }}</p>
+<div class="row">
+  <div class="col-md-3">
+    <img src="/img/{{ page.photo }}" class="img-responsive img-rounded">
+  </div>
+  <div class="col-md-9">
+    <h3><a href="{{ page.url }}"><strong>{{ page.title }}</strong></a></h3>
+    <p>{{ page.date  | date: "%B %d, %Y - %-I:%M %p" }}</p>
+    <p>{{ page.excerpt }}</p>
+  </div>
+</div>
 <hr>
 {% endif %}
 {% endfor %}

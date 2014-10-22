@@ -2,9 +2,10 @@
 layout: event
 pid: event
 category: events
+author: jcornelius
 title: An Evening with Jared Spool
 date: 2014-11-03 18:30
-author: jcornelius
+photo: event-assets/JaredSpool.jpg
 location_name: Polygon
 location_url: http://polygonatl.com
 rsvp_url: http://www.meetup.com/atlantawebdesign/events/211207492/
