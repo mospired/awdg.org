@@ -1,0 +1,16 @@
+---
+layout: default
+title: Upcoming Events
+pid: event
+---
+
+{% for page in site.pages %}
+{% capture page_date %}{{ page.date | date: '%s' | plus: 0 }}{% endcapture %}
+{% capture now %}{{ site.time | date: '%s' | plus: 0 }}{% endcapture %}
+{% if page.layout == 'event' and page_date >= now %}
+<h4><a href="{{ page.url }}"><strong>{{ page.title }}</strong></a></h4>
+<p>{{ page.date  | date: "%B %d, %Y - %-I:%M %p" }}</p>
+<p>{{ page.excerpt }}</p>
+<hr>
+{% endif %}
+{% endfor %}

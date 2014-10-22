@@ -38,6 +38,7 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav ">
+            <li{% if page.pid == 'event' %} class="active"{% endif %}><a href="/events/">Upcoming Events</a></li>
             <li{% if page.pid == 'speak' %} class="active"{% endif %}><a href="/speak/">Speak at an Event</a></li>
             <li{% if page.pid == 'sponsor' %} class="active"{% endif %}><a href="/sponsor/">Become a Sponsor</a></li>
             <li{% if page.pid == 'join' %} class="active"{% endif %}><a href="/join/">Join the Group</a></li>
@@ -53,31 +54,39 @@
 
         </section>
         <section id="side">
-          <div class="sidebar-sponsor-list">
-            <h4>Support Our Sponsors</h4>
-            {% for sponsor in site.data.sponsors %}
-            <div class="sidebar-sponsor">
-              <a class="pull-left" href="{{ sponsor.url }}">
-                <img class="media-object" src="/img/sponsor-assets/{{ sponsor.logo }}" alt="{{ sponsor.name }}">
-              </a>
-              <div class="media-body">
-                <h5 class="media-heading"><a href="{{ sponsor.url }}">{{ sponsor.name }}</a></h5>
-                <p>{{ sponsor.tagline }}</p>
-              </div>
-            </div>
+          <h3>Upcoming Events</h3>
+          <ul class="upcoming-events">
+            {% for page in site.pages %}
+            {% capture page_date %}{{ page.date | date: '%s' | plus: 0 }}{% endcapture %}
+            {% capture now %}{{ site.time | date: '%s' | plus: 0 }}{% endcapture %}
+            {% if page.layout == 'event' and page_date >= now %}
+            <li><a href="{{ page.url }}"><strong>{{ page.title }}</strong></a><br> <small>{{ page.date  | date: "%B %d, %Y"}}</small></li>
+            {% endif %}
             {% endfor %}
-          </div>
+          </ul>
           <div class="block offsite-buttons">
-            <a href="http://twitter.com/awdg" class="btn btn-default"><i class="fa fa-twitter"></i> Follow Us on Twitter</a>
-            <a href="https://www.facebook.com/atlantaweb" class="btn btn-default"><i class="fa fa-facebook"></i> Join Us on Facebook</a>
-            <a href="http://www.linkedin.com/groups/Atlanta-Web-Design-Group-1770134" class="btn btn-default"><i class="fa fa-linkedin"></i> Our LinkedIn Group</a>
+            <a href="http://twitter.com/awdg"><i class="fa fa-twitter"></i> Follow Us on Twitter</a>
+            <a href="https://www.facebook.com/atlantaweb"><i class="fa fa-facebook"></i> Join Us on Facebook</a>
+            <a href="http://www.linkedin.com/groups/Atlanta-Web-Design-Group-1770134"><i class="fa fa-linkedin"></i> Our LinkedIn Group</a>
             <a href="http://www.meetup.com/atlantawebdesign/"><i class="fa fa-users"></i> Join us on Meetup.com</a>
           </div>
         </section>
       </div>
+      <section class="sponsors">
+
+        <div class="sponsor-list">
+          <h5>Support Our Sponsors</h5>
+          {% for sponsor in site.data.sponsors %}
+          <div class="sponsor">
+            <a href="{{ sponsor.url }}"><img src="/img/sponsor-assets/{{ sponsor.logo }}" alt="{{ sponsor.name }}"></a>
+          </div>
+          {% endfor %}
+        </div>
+      </section>
     </div>
 
   </div> <!-- /wrap -->
+
   <footer>
     <div class="container">
       <div class="sub-navigation">
@@ -85,7 +94,7 @@
           <a href="/join/">Join Us</a> &middot;
           <a href="/speak/">Submit a Talk</a> &middot;
           <a href="/sponsor/">Sponsor an Event</a>
-          |
+          //
           <a href="https://twitter.com/awdg">Twitter</a> &middot;
           <a href="https://www.facebook.com/atlantaweb">Facebook</a> &middot;
           <a href="http://www.linkedin.com/groups/Atlanta-Web-Design-Group-1770134">LinkedIn</a>
@@ -102,12 +111,12 @@
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-48977047-3', 'auto');
-    ga('send', 'pageview');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-48977047-3', 'auto');
+  ga('send', 'pageview');
   </script>
 </body>
 </html>

@@ -42,8 +42,9 @@ nav {
   padding-top:1em;
   a {
     @extend .btn;
-    @extend .btn-primary;
+    @extend .btn-default;
     @extend .btn-sm;
+    @extend .btn-block;
     margin-bottom:10px;
   }
 }
@@ -52,16 +53,30 @@ nav {
   clear:both;
 }
 
-.sidebar-sponsor-list {
-  margin:2em 0;
-  .sidebar-sponsor {
-    @extend .media;
-    img {
-      max-width: 90px;
+.sponsors {
+  margin:6em 0 2em;
+  .sponsor-list {
+    h5 {
+      color: $gray-light;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    @extend .row;
+    @extend .well;
+    .sponsor {
+      @extend .col-md-2;
+      img {
+        @extend .img-responsive;
+      }
     }
   }
 }
 
+.social-photo {
+  @extend .img-responsive;
+  @extend .img-rounded;
+  margin-bottom: 2em;
+}
 
 ////////////////////////////
 // Post Lists
@@ -114,7 +129,32 @@ article.post-page {
 
 }
 
+////////////////////////////
+// Events
 
+.event-header {
+  border-bottom: 2px solid $gray-lighter;
+  margin-bottom: 2em;
+}
+
+.event-speaker {
+  margin:3em 0;
+}
+.event-rsvp {
+  border-width: 1px 0;
+  border-color: $gray-lighter;
+  border-style:solid;
+  margin-bottom:4em;
+  padding:1em;
+  p {
+    font-size:2em;
+    font-weight: bold;
+  }
+}
+
+.event-sponsor {
+  color:$gray;
+}
 
 ////////////////////////////
 // Forms
