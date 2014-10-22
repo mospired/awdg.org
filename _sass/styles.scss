@@ -44,7 +44,6 @@ nav {
     @extend .btn;
     @extend .btn-default;
     @extend .btn-sm;
-    @extend .btn-block;
     margin-bottom:10px;
   }
 }
@@ -76,6 +75,15 @@ nav {
   @extend .img-responsive;
   @extend .img-rounded;
   margin-bottom: 2em;
+}
+
+.social-host {
+  border-bottom: 1px solid $gray-lighter;
+  margin-bottom: 3em;
+  padding-bottom: 2em;
+  img {
+    max-width: 90px;
+  }
 }
 
 ////////////////////////////
@@ -133,8 +141,21 @@ article.post-page {
 // Events
 
 .event-header {
+  @extend .row;
   border-bottom: 2px solid $gray-lighter;
   margin-bottom: 2em;
+  hgroup {
+    @extend .col-md-9;
+  }
+  .actions {
+    @extend .col-md-3;
+  }
+  .rsvp-button {
+    @extend .btn ;
+    @extend .btn-primary;
+    @extend .pull-right;
+    margin-top: 2em;
+  }
 }
 
 .event-speaker {
@@ -153,7 +174,10 @@ article.post-page {
 }
 
 .event-sponsor {
+  border-bottom: 1px solid $gray-lighter;
   color:$gray;
+  margin-bottom: 3em;
+  padding-bottom: 2em;
 }
 
 ////////////////////////////

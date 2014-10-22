@@ -59,7 +59,7 @@
             {% for page in site.pages %}
             {% capture page_date %}{{ page.date | date: '%s' | plus: 0 }}{% endcapture %}
             {% capture now %}{{ site.time | date: '%s' | plus: 0 }}{% endcapture %}
-            {% if page.layout == 'event' and page_date >= now %}
+            {% if page.pid == 'event' and page_date >= now %}
             <li><a href="{{ page.url }}"><strong>{{ page.title }}</strong></a><br> <small>{{ page.date  | date: "%B %d, %Y"}}</small></li>
             {% endif %}
             {% endfor %}
