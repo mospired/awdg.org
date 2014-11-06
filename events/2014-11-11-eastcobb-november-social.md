@@ -4,7 +4,7 @@ pid: event
 category: social
 author: Courtney
 title: East Cobb Social
-date: 2014-11-11 18:30
+date: 2014-11-11 19:00
 photo: socials.png
 host_name: Susan Chambers
 host_twitter: susanchambers1
