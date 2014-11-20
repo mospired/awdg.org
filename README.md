@@ -25,12 +25,12 @@ Then install Bower. It depends on [Node](http://nodejs.org/) and [npm](http://np
 
 **Now that things are installed**
 
-Move into your webafternoon.com directory and start the Jekyll server.
+Move into your awdg.org directory and start the Jekyll server.
 
-    cd webafternoon.com
-    jekyll serve -w --baseurl ''
+    cd awdg.org
+    jekyll serve -w
 
-Now you can view your out-of-the-box website by going to [http://localhost:4000](http://localhost:4000).
+Now you can view your out-of-the-box website by going to [http://localhost:9000](http://localhost:9000).
 
 Notes: We use [Sass](http://sass-lang.com/) installed via Bower.
 
