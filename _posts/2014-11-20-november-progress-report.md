@@ -10,10 +10,6 @@ We'd rather not take too much time away from you looking a cat photos, so we'll 
 
 There is progress to report on two fronts; front-end design and application architecture. This post will just talk about design. [Moses](https://twitter.com/mospired) will post some details about the architecture later.
 
-## Pattern Library
-
-HI THERE
-
 ## Structured Sass, Baby
 We're building a pattern library based on Bootstrap components. The idea is that when someone forks the project on Github, they will be able to strip out our AWDG theme CSS files and be back to square one with Bootstrap. All CSS will be written with [Sass](http://sass-lang.com/) ('cause it's awesome) and structured in a modular format to make maintenance and future development easier.
 
