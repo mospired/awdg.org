@@ -5,20 +5,23 @@ author: jcornelius
 category: blog
 ---
 
-<p>Here we are. This is the basis for our new website.</p>
-<h3>Don&rsquo;t get excited. This is not the final design!</h3>
-<p>It&rsquo;s just something we put together to serve as a placeholder for updates and other info while the website is being made.</p>
-<p>So what&rsquo;s happening here? This is just a quick <a href="http://jekyllrb.com">Jekyll</a> website hosted on <a href="http://pages.github.com">GitHub Pages</a>. We&rsquo;ve used <a href="http://getbootstrap.com">Twitter Bootstrap</a> to get things up and running quickly. Feel free to <a href="https://github.com/AWDG/awdg.org">have a look at the code</a>.
-<p>The <a href="/speak/">Speaker Application</a> and <a href="/sponsor/">Become a Sponsor</a> forms are powered by Wufoo, and the <a href="/join">Join the Group</a> form is hooked up to our Mailchimp account (which we&rsquo;ll use as the basis for our membership database).</p>
+Here we are. This is the basis for our new website. But don&rsquo;t get excited. This is not the final design! It&rsquo;s just something we put together to serve as a placeholder for updates and other info while the website is being made.
+
+So what&rsquo;s happening here? This is just a quick [Jekyll](http://jekyllrb.com) website hosted on [GitHub Pages](http://pages.github.com). We&rsquo;ve used [Bootstrap](http://getbootstrap.com) to get things up and running quickly. Feel free to [have a look at the code](https://github.com/AWDG/awdg.org).
+
+The [Speaker Application](/speak/) and [Become a Sponsor](/sponsor/) forms are powered by Wufoo, and the [Join the Group](/join/) form is hooked up to our Mailchimp account (which we&rsquo;ll use as the basis for our membership database).
 
 
-<h3>Wait a sec. Who&rsquo;s doing this?</h3>
-<p>As we said in the <a href="https://www.kickstarter.com/projects/jcornelius/official-awdg-website">Kickstarter Campaign</a>, we&rsquo;re running this like a regular client project (except that we&rsquo;re posting a lot of details to the public), so the team at Nine Labs is leading the charge.</p>
-<p>We have <a href="https://twitter.com/jc">J Cornelius</a> as Project Manager, <a href="https://twitter.com/suckerpunchinc">Brad Weaver</a> as UX and Creative Lead, <a href="https://twitter.com/mospired">Moses Ngone</a> as Technical Lead, and <a href="https://twitter.com/jottin">Jason Ottinger</a> as Design Lead.</p>
-<p>Want to help out? Great! We&rsquo;ll certainly need help as things move along. <a href="mailto:jc@awdg.org">Send me an email</a> with your skills and what you&rsquo;d like to do to help.</p>
+### Wait a sec. Who&rsquo;s doing this?
 
-<h2>Sketching Things Out</h2>
-<p>Here are a few sketches Brad has been working on showing various ideas for how the home page, events list, and profile page might lay out.</p>
+As we said in the [Kickstarter Campaign](https://www.kickstarter.com/projects/jcornelius/official-awdg-website), we&rsquo;re running this like a regular client project (except that we&rsquo;re posting a lot of details to the public), so the team at Nine Labs is leading the charge.
+
+We have [J Cornelius](https://twitter.com/jc) as Project Manager, [Brad Weaver](https://twitter.com/sbradweaver) as UX and Creative Lead, [Moses Ngone](https://twitter.com/mospired) as Technical Lead, and [Jason Ottinger](https://twitter.com/jottin) as Design Lead.</p>
+
+Want to help out? Great! We&rsquo;ll certainly need help as things move along. [Send me an email](mailto:jc@awdg.org) with your skills and what you&rsquo;d like to do to help.
+
+## Sketching Things Out
+Here are a few sketches Brad has been working on showing various ideas for how the home page, events list, and profile page might lay out.
 <figure>
   <img src="/img/awdg-site-sketch-1.png" alt="Member Profile Page Sketch">
   <figcaption>Member Profile Page (large)</figcaption>
@@ -45,8 +48,9 @@ category: blog
 </figure>
 
 
-<h3>Next Up</h3>
-<p>We&rsquo;ll be working on the wireframes and process workflows next.</p>
-<p>That&rsquo;s all for now. Thanks for your support!</p>
+### Next Up
+We&rsquo;ll be working on the wireframes and process workflows next.
 
-<p>- J Cornelius</p>
+That&rsquo;s all for now. Thanks for your support!
+
+&mdash; J Cornelius
