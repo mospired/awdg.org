@@ -8,16 +8,16 @@ category: social
     <header class="event-header">
       <hgroup>
         <h1>{{ page.title }}</h1>
-        <h4><span class="event-datetime">{{ page.date  | date: "%B %d, %Y - %-I:%M %p" }}</span> // <a class="event-location" href="{{ page.location_url }}">{{ page.location_name }}</a></h4>
+        <h4><span class="event-datetime">{{ page.date  | date: "%B %d, %Y - %-I:%M %p" }}</span> // <a class="event-location" href="{{ page.location.url }}">{{ page.location.name }}</a></h4>
       </hgroup>
       <div class="actions">
         <a href="{{ page.rsvp_url }}" class="rsvp-button"><i class="fa fa-check-square"></i> RSVP Now</a>
       </div>
     </header>
     <div class="event-details">
-      <img src="/img/{% if page.photo %}{{ page.photo }}{% else %}socials.png{% endif %}" class="social-photo">
-      <div class="lead">
-        {{ page.details }}
+      <img src="{% if page.photo %}{{ site.event-photo-url }}{{ page.photo }}{% else %}/img/socials.png{% endif %}" class="social-photo">
+      <div>
+        {{ content }}
       </div>
       <div class="event-rsvp">
         <p><a href="{{ page.rsvp_url }}" class="btn btn-lg btn-primary"><i class="fa fa-check-square"></i> RSVP Now // It's Free!</a></p>
@@ -26,12 +26,12 @@ category: social
     <div class="social-host">
       <h4>Your Localhost</h4>
       <div class="media">
-        <a class="pull-left" href="https://twitter.com/{{ page.host_twitter }}">
-          <img class="media-object img-rounded" src="http://avatars.io/twitter/{{ page.host_twitter }}?size=large" alt="{{ page.host_name }}">
+        <a class="pull-left" href="https://twitter.com/{{ page.host.twitter }}">
+          <img class="media-object img-rounded" src="http://avatars.io/twitter/{{ page.host.twitter }}?size=large" alt="{{ page.host.name }}">
         </a>
         <div class="media-body">
-          <h4 class="media-heading">{{ page.host_name }} <small><a href="https://twitter.com/{{ page.host_twitter }}">@{{ page.host_twitter }}</a></small></h4>
-          <p>{{ page.host_bio }}</p>
+          <h4 class="media-heading">{{ page.host.name }} <small><a href="https://twitter.com/{{ page.host.twitter }}">@{{ page.host.twitter }}</a></small></h4>
+          <p>{{ page.host.bio }}</p>
         </div>
       </div>
     </div>
