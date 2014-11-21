@@ -160,9 +160,42 @@ article.post-page {
     margin-top: 2em;
   }
 }
+.event-details p:first-of-type {
+  @extend .lead;
+}
 
 .event-speaker {
   margin:3em 0;
+  .speaker-header, .speaker-details {
+    @include make-row();
+  }
+  .speaker-header > div {
+    @include make-sm-column(12);
+    h4 {
+      color: $gray-light;
+    }
+  }
+  .speaker-photo {
+    @include make-sm-column(4);
+    img {
+      @extend .img-responsive;
+      @extend .img-thumbnail;
+    }
+  }
+  .speaker-bio {
+    @include make-sm-column(8);
+    h2, h3 {
+      margin-top: 0;
+    }
+  }
+  .speaker-links {
+    margin-top:1em;
+    a {
+      @extend .btn;
+      @extend .btn-default;
+      @extend .btn-sm;
+    }
+  }
 }
 .event-rsvp {
   border-width: 1px 0;

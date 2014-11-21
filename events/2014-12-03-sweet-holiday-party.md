@@ -5,7 +5,7 @@ category: events
 author: Courtney
 title: SWEeT Holiday Party
 date: 2014-12-03 19:00
-photo: event-assets/2014-sweet-party.png
+photo: 2014-sweet-party.png
 location_name: Ri Ra Irish Pub
 location_url: https://www.rira.com/atlanta/
 rsvp_url: http://www.eventbrite.com/e/sweet-holiday-party-atlanta-2014-tickets-14150349075

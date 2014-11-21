@@ -15,7 +15,28 @@ pid: event
       </div>
     </header>
 
-    {{ content }}
+    <div class="event-details">
+      {{ content }}
+      {% if page.speaker %}
+
+      <div class="event-speaker">
+        <div class="speaker-header">
+          <div><h4>About Your Speaker</h4></div>
+        </div>
+        <div class="speaker-details">
+          <div class="speaker-photo"><img src="{{ site.event-photo-url }}{{ page.speaker.photo }}"></div>
+          <div class="speaker-bio">
+            <h2>{{ page.speaker.name }}</h2>
+            {{ page.speaker.bio }}
+            <div class="speaker-links">
+              <a href="https://twitter.com/{{ page.speaker.twitter }}"><i class="fa fa-twitter"></i> Twitter</a>
+              <a href="{{ page.speaker.website }}"><i class="fa fa-link"></i> Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endif %}
+    </div>
 
     <div class="event-rsvp">
       <p><a href="{{ page.rsvp_url }}" class="btn btn-lg btn-primary"><i class="fa fa-check-square"></i> Reserve Your Seat // RSVP Now</a></p>
