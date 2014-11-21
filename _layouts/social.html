@@ -15,7 +15,7 @@ category: social
       </div>
     </header>
     <div class="event-details">
-      <img src="/img/{% if page.photo %}{{ page.photo }}{% else %}socials.png{% endif %}" class="social-photo">
+      <img src="{% if page.photo %}{{ site.event-photo-url }}{{ page.photo }}{% else %}/img/socials.png{% endif %}" class="social-photo">
       <div class="lead">
         {{ content }}
       </div>

@@ -9,7 +9,6 @@ host_name: Jason Beaird
 host_twitter: jasongraphix
 host_bio: |
   My name is Jason and I'll be the locahost for this event. If you arrive and are trying to find us, I'll be wearing a bright red AWDG t-shirt and I'll have a red AWDG sign near the group as well.
-host_photo: marlayhouse.jpg
 rsvp_url: http://www.meetup.com/atlantawebdesign/events/218112332/
 location_name: The Marlay House
 location_url: http://themarlayhouse.com/
