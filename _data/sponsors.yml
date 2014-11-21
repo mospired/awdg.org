@@ -1,0 +1,49 @@
+- name: 352 Media
+  tagline:
+  url: http://www.352inc.com/
+  logo: 352.png
+
+- name: Call Rail
+  tagline:
+  url: http://www.callrail.com/
+  logo: callrail.png
+
+- name: Code Guard
+  tagline:
+  url: http://www.codeguard.com
+  logo: codeguard.png
+
+- name: CoffeeCup
+  tagline:
+  url: http://www.coffeecup.com
+  logo: coffeecup.png
+
+- name: Nebo
+  tagline:
+  url: http://www.neboweb.com
+  logo: nebo.png
+
+- name: 45 Royale
+  tagline:
+  url: http://www.45royale.com
+  logo: 45royale.png
+
+- name: MailChimp
+  tagline:
+  url: http://www.maiolchimp.com
+  logo: mailchimp.png
+
+- name: Polygon
+  tagline: The Event Space for the Creative Community
+  url: http://polygonatl.com
+  logo: polygon-small.png
+
+- name: Nine Labs
+  tagline: Your ideas, our creativity, business results.
+  url: http://ninelabs.com
+  logo: ninelabs.png
+
+- name: Strongbox West
+  tagline:
+  url: http://www.strongboxwest.com
+  logo: strongbox.png

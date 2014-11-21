@@ -1,0 +1,20 @@
+---
+layout: default
+title: Latest News
+category: blog
+pid: blog
+---
+
+{% for post in site.posts %}
+<div class="row">
+  <div class="col-md-3">
+    <p style="color:#aaa;margin-top:2em;text-align:right;">{{ post.date  | date: "%B %d, %Y" }}</p>
+  </div>
+  <div class="col-md-9">
+    <h3><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a></h3>
+    <p>{{ post.excerpt | strip_html }}</p>
+    <p><a href="{{ post.url }}" class="btn btn-default btn-xs">Read More <i class="fa fa-chevron-right"></i></a></p>
+  </div>
+</div>
+<hr>
+{% endfor %}

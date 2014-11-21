@@ -1,0 +1,44 @@
+---
+layout: default
+pid: event
+---
+
+<article class="event-page">
+  <div class="event-info">
+    <header class="event-header">
+      <hgroup>
+        <h1>{{ page.title }}</h1>
+        <h4><span class="event-datetime">{{ page.date  | date: "%B %d, %Y - %-I:%M %p" }}</span> // <a class="event-location" href="{{ page.location_url }}">{{ page.location_name }}</a></h4>
+      </hgroup>
+      <div class="actions">
+        <a href="{{ page.rsvp_url }}" class="rsvp-button"><i class="fa fa-check-square"></i> RSVP Now</a>
+      </div>
+    </header>
+
+    {{ content }}
+
+    <div class="event-rsvp">
+      <p><a href="{{ page.rsvp_url }}" class="btn btn-lg btn-primary"><i class="fa fa-check-square"></i> Reserve Your Seat // RSVP Now</a></p>
+    </div>
+    {% if page.sponsor == 'polygon' %}
+    <div class="event-sponsor">
+      <h4>This Event is Brought to You by:</h4>
+      <div class="row">
+        <div class="col-md-2"><img class="img-responsive" src="/img/sponsor-assets/polygon-small.png"></div>
+        <div class="col-md-10">
+          <p>Polygon is the new tech, web, & creative event space in Midtown Atlanta. It's the perfect spot for meetups, hackathons, workshops, and plenty more.</p>
+          <p><a href="http://polygonatl.com" class="btn btn-default">Visit Polygon</a></p>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="post-social">
+    <h4>Share this event</h4>
+    <span class='st_facebook_large' displayText='Facebook'></span>
+    <span class='st_twitter_large' displayText='Tweet'></span>
+    <span class='st_linkedin_large' displayText='LinkedIn'></span>
+    <span class='st_email_large' displayText='Email'></span>
+  </div>
+</article>
