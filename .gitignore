@@ -3,3 +3,4 @@ bower_components/*
 *-workspace
 *-project
 _site/*
+_sass/.sass-cache/*
