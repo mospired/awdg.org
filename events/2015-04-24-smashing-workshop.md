@@ -5,7 +5,7 @@ category: events
 author: courtney
 title: Smashing Workshop - Smart RWD Front-End/Performance Techniques
 date: 2015-04-24 08:30
-photo: https://shop.smashingmagazine.com/media/catalog/product/cache/1/image/342x365/9df78eab33525d08d6e5fb8d27136e95/v/i/vitaly-friedman-responsive-web-design-clever-tricks-and-techniques-london-2c_3_3_2_1_1.jpg
+photo: event-assets/vitaly.jpg
 location_name: Polygon
 location_url: http://polygonatl.com
 rsvp_url: https://shop.smashingmagazine.com/smashing-workshop-responsive-design-atlanta.html

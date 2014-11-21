@@ -117,6 +117,9 @@ article.post-page {
   .post {
     border-bottom: 2px solid #eee;
     margin-bottom: 3em;
+    p:first-of-type {
+      @extend .lead;
+    }
   }
 
   .post-pubdate {
