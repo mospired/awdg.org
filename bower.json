@@ -1,8 +1,8 @@
 {
   "name": "awdg.org",
   "version": "0.1.0",
-  "homepage": "http://www.awdg.org",
-  "private":true,
+  "homepage": "https://github.com/AWDG/awdg.org",
+  "authors": [],
   "description": "Official home of the Atlanta Web Design Group",
   "main": "index.html",
   "keywords": [
@@ -10,13 +10,12 @@
   ],
   "ignore": [
     "**/.*",
-    "node_modules",
     "bower_components",
     "test",
     "tests"
   ],
   "dependencies": {
+    "bootstrap-sass": "~3.0.2",
     "font-awesome": "~4.2.0",
-    "bootstrap-sass-official": "~3.3.1"
   }
 }
