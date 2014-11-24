@@ -6,10 +6,11 @@ author: Courtney
 title: Producing Creativity + Behind the Scenes of the AWDG Website Build
 date: 2014-12-11 18:30
 photo: stevesmith.jpg
-location_name: Polygon
-location_url: http://polygonatl.com
 sponsor: polygon
 rsvp_url: http://www.meetup.com/atlantawebdesign/events/217817502/
+location:
+  name: Polygon
+  url: http://polygonatl.com
 speaker:
   name: Steve Smith
   photo: stevesmith.jpg
