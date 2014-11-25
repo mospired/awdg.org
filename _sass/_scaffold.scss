@@ -31,7 +31,11 @@ main {
 .btn {
   min-width: 200px;
 }
-
+.btn-default {
+  color: #fff;
+  background-color: #000;
+  border-color: #777;
+}
 
 // Tables
 

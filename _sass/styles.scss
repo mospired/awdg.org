@@ -1,6 +1,7 @@
 // styles.scss
 
-@import 'variables','../bower_components/bootstrap-sass/lib/bootstrap.scss','scaffold';
+
+@import "variables","libs","scaffold";
 
 $footerheight: 100px;
 $container-border: 1px solid darken($brand-primary, .5);
