@@ -2,7 +2,7 @@
 layout: social
 pid: event
 category: social
-title: Decatur Social
+title: Decatur Webbie Social
 date: 2014-11-24 20:00
 author: Courtney
 photo: marlayhouse.jpg

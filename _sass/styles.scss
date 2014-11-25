@@ -52,6 +52,13 @@ nav {
   clear:both;
 }
 
+.section-header {
+  border-bottom:1px solid $brand-primary;
+  margin-bottom: 2em;
+}
+
+
+
 .sponsors {
   margin:6em 0 2em;
   .sponsor-list {
@@ -106,12 +113,8 @@ nav {
 
 article.post-page {
 
-  font-size: 1.2em;
-
   .post-header {
-    border-bottom:1px solid $brand-primary;
-    margin-bottom: 2em;
-
+    @extend .section-header;
   }
 
   .post {
