@@ -1,6 +1,6 @@
 // styles.scss
 
-@import '../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss','responsive','pygments';
+@import 'variables','../bower_components/bootstrap-sass/lib/bootstrap.scss','scaffold';
 
 $footerheight: 100px;
 $container-border: 1px solid darken($brand-primary, .5);
@@ -19,7 +19,7 @@ html,body {
 nav {
   #brand img {
     margin:1em 3em 1em 0;
-    width:72px;
+    width:64px;
   }
 }
 #page {

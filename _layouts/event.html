@@ -2,7 +2,6 @@
 layout: default
 pid: event
 ---
-
 <article class="event-page">
   <div class="event-info">
     <header class="event-header">
@@ -14,11 +13,9 @@ pid: event
         <a href="{{ page.rsvp_url }}" class="rsvp-button"><i class="fa fa-check-square"></i> RSVP Now</a>
       </div>
     </header>
-
     <div class="event-details">
       {{ content }}
       {% if page.speaker %}
-
       <div class="event-speaker">
         <div class="speaker-header">
           <div><h4>About Your Speaker</h4></div>
@@ -37,7 +34,6 @@ pid: event
       </div>
       {% endif %}
     </div>
-
     <div class="event-rsvp">
       <p><a href="{{ page.rsvp_url }}" class="btn btn-lg btn-primary"><i class="fa fa-check-square"></i> Reserve Your Seat // RSVP Now</a></p>
     </div>
@@ -54,7 +50,6 @@ pid: event
     </div>
     {% endif %}
   </div>
-
   <div class="post-social">
     <h4>Share this event</h4>
     <span class='st_facebook_large' displayText='Facebook'></span>

@@ -6,8 +6,9 @@ author: courtney
 title: Smashing Workshop - Smart RWD Front-End/Performance Techniques
 date: 2015-04-24 08:30
 photo: vitaly.jpg
-location_name: Polygon
-location_url: http://polygonatl.com
+location:
+  name: Polygon
+  url: http://polygonatl.com
 rsvp_url: https://shop.smashingmagazine.com/smashing-workshop-responsive-design-atlanta.html
 speaker:
   name: Vitaly Friedman
