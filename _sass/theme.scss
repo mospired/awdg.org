@@ -1,6 +1,6 @@
 // theme.scss
 
-@import 'variables','../bower_components/bootstrap-sass/lib/bootstrap.scss','scaffold';
+@import "variables","libs","scaffold";
 
 nav {
   #brand img {
