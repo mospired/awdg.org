@@ -19,7 +19,6 @@ speaker:
     Vitaly is the author, co-author and editor of all the Smashing books. He currently works as editor-in-chief of Smashing Magazine in the lovely city of Freiburg, Germany.
   twitter: smashingmag
   website: http://smashingmag.com
-
 ---
 In this full-day workshop, Vitaly Friedman (editor-in-chief of [Smashing Magazine](http://smashingmag.com)), will present **practical techniques, clever tricks and useful strategies** you need to be aware of when working on any responsive design project.
 

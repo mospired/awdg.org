@@ -18,6 +18,12 @@ speaker:
   twitter: orderedlist
   website: https://github.com/orderedlist
 ---
-Since we're using [GitHub](https://github.com) to build the new AWDG website, we decided to invite them down to speak with you! Hear from Steve Smith on Dec. 11th on Producing Creativity. Feeling stuck, and can't get the creative juices flowing again? Attend Steve's presentation. He'll share his best tips to reinvigorate your creativity. </p>
-In the realm of UX, it's even harder to be creative. With so much information out there, it's difficult to craft something simple, with a purpose. Steve will walk you through the UX process, and show you how to be creative again.</p>
-Get the details behind the new AWDG website at our Behind the Scenes Sneak Peek! We'll show you the framework we'll be using, wireframes, designs, philosophy behind the website, and so much more. We'll talk about what technologies we are using, why we choose them, and answer any questions you have. Hope to see you December 11th!</p>
+Feeling stuck, and can't get the creative juices flowing again? Steve Smith will share his best tips to reinvigorate your creativity.
+
+Since we're using [GitHub](https://github.com) to build the new AWDG website, we decided to invite them down to speak with you! In the realm of UX, it's even harder to be creative. With so much information out there, it's difficult to craft something simple, with a purpose. Steve will walk you through the UX process, and show you how to be creative again.
+
+
+### But Wait! There's More!
+Get the details behind the new AWDG website at our Behind the Scenes Sneak Peek! We'll show you the framework we'll be using, wireframes, designs, philosophy behind the website, and so much more. We'll talk about what technologies we are using, why we choose them, and answer any questions you have.
+
+Hope to see you December 11th!

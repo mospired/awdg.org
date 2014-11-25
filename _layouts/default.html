@@ -56,14 +56,10 @@
 
         </section>
         <section id="side">
-          <h3>Upcoming Events</h3>
-          <ul class="upcoming-events">
-            {% for page in site.pages %}
-            {% capture page_date %}{{ page.date | date: '%s' | plus: 0 }}{% endcapture %}
-            {% capture now %}{{ site.time | date: '%s' | plus: 0 }}{% endcapture %}
-            {% if page.pid == 'event' and page_date >= now %}
-            <li><a href="{{ page.url }}"><strong>{{ page.title }}</strong></a><br> <small>{{ page.date  | date: "%B %d, %Y"}}</small></li>
-            {% endif %}
+          <h2>Latest News</h2>
+          <ul>
+            {% for post in site.posts %}
+            <li><a href="{{ post.url }}"><strong>{{ post.title }}</strong></a><br> <small>{{ post.date  | date: "%B %d, %Y"}}</small></li>
             {% endfor %}
           </ul>
           <div class="block offsite-buttons">
