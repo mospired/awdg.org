@@ -57,6 +57,19 @@ nav {
   margin-bottom: 2em;
 }
 
+.welcome {
+  figure {
+    @extend .well;
+  }
+  figcaption {
+    color: $gray;
+    padding:1em;
+    p:first-of-type {
+      font-weight:bold;
+    }
+  }
+}
+
 
 
 .sponsors {
