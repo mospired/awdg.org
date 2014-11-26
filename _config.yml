@@ -4,3 +4,4 @@ highlighter: true
 port: 9000
 permalink: /:categories/:title.html
 event-photo-url: //awdg.s3.amazonaws.com/event-assets/
+exclude: [vendor, bower.json,README.md]
