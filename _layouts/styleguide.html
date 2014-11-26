@@ -54,8 +54,10 @@
         <aside>
           <h4>Style Guide</h4>
           <ul class="list-unstyled">
-            <li><a href="/styleguide/">General Elements</a></li>
-            <li><a href="/styleguide/headers.html">Header Modules</a></li>
+            {% assign guides = (site.pages | sort: "weight" | where: "layout" , "styleguide" ) %}
+            {% for page in guides %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endfor %}
           </ul>
         </aside>
       </div>

@@ -1,7 +1,8 @@
 ---
 layout: styleguide
-title: Style Guide // Header Modules
-pid: style
+title: Headers
+pid: styleguide
+weight: 2
 ---
 
 # Header Modules
