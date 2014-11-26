@@ -17,40 +17,67 @@ main {
  padding-bottom: 5em;
  >div {
    @include make_row();
-   section {
+   >section {
      @include make-sm-column(8);
    }
-   aside {
+   >aside {
      @include make-sm-column(3);
      @extend .col-sm-offset-1;
    }
  }
 }
 
+///////////////////////////////////////////////////////////
 // Buttons
-.btn {
-  min-width: 200px;
+
+
+///////////////////////////////////////////////////////////
+// Header Modules
+
+section header {
+  @include make-row();
+  border-bottom: 1px solid $brand-primary;
+  margin-bottom: 1.5em;
+  hgroup {
+    @include make-sm-column(12);
+    h1 { margin-top: 0; }
+  }
 }
 
+section .event header {
+  hgroup {
+    @include make-sm-column(9);
+  }
+  div {
+    @include make-sm-column(3);
+    text-align: right;
+  }
+}
 
+.rsvp-button {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+///////////////////////////////////////////////////////////
 // Tables
 
-.table>thead>tr>th, 
-.table>thead>tr>td, 
-.table>tbody>tr>th, 
-.table>tbody>tr>td, 
-.table>tfoot>tr>th, 
+.table>thead>tr>th,
+.table>thead>tr>td,
+.table>tbody>tr>th,
+.table>tbody>tr>td,
+.table>tfoot>tr>th,
 .table>tfoot>tr>td {
   padding: 10px 25px;
   border-top: 2px solid $table-border-color;
 }
 
 .table-bordered>thead:first-child>tr:first-child>th,
-.table-bordered>thead>tr>th, 
-.table-bordered>thead>tr>td, 
-.table-bordered>tbody>tr>th, 
-.table-bordered>tbody>tr>td, 
-.table-bordered>tfoot>tr>th, 
+.table-bordered>thead>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>tbody>tr>th,
+.table-bordered>tbody>tr>td,
+.table-bordered>tfoot>tr>th,
 .table-bordered>tfoot>tr>td {
   border: 2px solid $table-border-color;
 }

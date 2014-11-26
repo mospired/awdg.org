@@ -48,14 +48,14 @@
         </div>
       </div>
     </nav>
-    <div id="page" class="container">
-      <div class="row">
-        <section id="content">
+    <main>
+      <div>
+        <section>
 
           {{ content }}
 
         </section>
-        <section id="side">
+        <aside>
           <h2>Latest News</h2>
           <ul>
             {% for post in site.posts %}
@@ -68,8 +68,9 @@
             <a href="http://www.linkedin.com/groups/Atlanta-Web-Design-Group-1770134"><i class="fa fa-linkedin"></i> Our LinkedIn Group</a>
             <a href="http://www.meetup.com/atlantawebdesign/"><i class="fa fa-users"></i> Join us on Meetup.com</a>
           </div>
-        </section>
+        </aside>
       </div>
+
       <section class="sponsors">
 
         <div class="sponsor-list" id="sponsors">
@@ -81,7 +82,7 @@
           {% endfor %}
         </div>
       </section>
-    </div>
+    </main>
 
   </div> <!-- /wrap -->
 

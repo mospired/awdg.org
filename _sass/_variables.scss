@@ -16,6 +16,7 @@ $brand-info:            rgb(250, 218, 99) !default;
 $brand-warning:         #f0ad4e !default;
 $brand-danger:          #d9534f !default;
 
+$container-border: 1px solid darken($brand-primary, .5);
 
 ///////////////////////////////////////////////////////////////////////
 // Typography
