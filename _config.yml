@@ -1,6 +1,6 @@
 name: Atlanta Web Design Group
-markdown: redcarpet
-highlighter: true
+markdown:    kramdown
+highlighter: pygments
 port: 9000
 permalink: /:categories/:title.html
 event-photo-url: //awdg.s3.amazonaws.com/event-assets/
