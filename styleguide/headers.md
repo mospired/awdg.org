@@ -31,6 +31,32 @@ In this case the `<header>` element extends `.row`, and `<hgroup>` extends `.col
   </div>
 </div>
 
+They can also have a subheader using a `<h4>` element for extra info.
+
+```
+<header>
+  <hgroup>
+    <h1>{% raw %}{{ page.title }}{% endraw %}</h1>
+    <h4>Supplimental information about the page or section goes here.</h4>
+  </hgroup>
+</header>
+```
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Basic Header Module with Subheader Example</h3>
+  </div>
+  <div class="panel-body post">
+    <header>
+      <hgroup>
+        <h1>Page Title</h1>
+        <h4>Supplimental information about the page or section goes here.</h4>
+      </hgroup>
+    </header>
+  </div>
+</div>
+
+
 ----
 
 ## Post Pages
