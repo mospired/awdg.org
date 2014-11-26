@@ -40,20 +40,23 @@
             <li{% if page.pid == 'speak' %} class="active"{% endif %}><a href="/speak/">Speak at an Event</a></li>
             <li{% if page.pid == 'sponsor' %} class="active"{% endif %}><a href="/sponsor/">Become a Sponsor</a></li>
             <li{% if page.pid == 'join' %} class="active"{% endif %}><a href="/join/">Join the Group</a></li>
-
           </ul>
         </div>
       </div>
     </nav>
     <main>
       <div>
-        <section>
+        <section class="styleguide">
 
           {{ content }}
 
         </section>
         <aside>
-          <p>Placeholder for aside content.</p>
+          <h4>Style Guide</h4>
+          <ul class="list-unstyled">
+            <li><a href="/styleguide/">General Elements</a></li>
+            <li><a href="/styleguide/headers.html">Header Modules</a></li>
+          </ul>
         </aside>
       </div>
     </main>

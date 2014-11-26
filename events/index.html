@@ -3,10 +3,13 @@ layout: default
 title: Events
 pid: event-list
 ---
-<hgroup class="section-header">
-  <h2>Upcoming Events</h2>
-  <h4>The where and when of Atlanta&rsquo;s web community</h4>
-</hgroup>
+<header>
+  <hgroup>
+    <h1>Upcoming Events</h1>
+    <h5>The who, what, where, and when of Atlanta&rsquo;s web community.</h5>
+  </hgroup>
+</header>
+
 {% for page in site.pages %}
 {% capture page_date %}{{ page.date | date: '%s' | plus: 0 }}{% endcapture %}
 {% capture now %}{{ site.time | date: '%s' | plus: 0 }}{% endcapture %}

@@ -5,6 +5,48 @@
 nav {
   #brand img {
     margin:1em 3em 1em 0;
-    width:72px;
+    width:64px;
   }
+}
+
+.welcome {
+  figure {
+    @extend .well;
+  }
+  figcaption {
+    color: $gray;
+    padding:1em;
+    p:first-of-type {
+      font-weight:bold;
+    }
+  }
+}
+
+.offsite-buttons {
+  border-top: $container-border;
+  clear: both;
+  margin-top:3em;
+  padding-top:1em;
+  a {
+    @extend .btn;
+    @extend .btn-default;
+    @extend .btn-sm;
+    margin-bottom:10px;
+  }
+}
+
+.post {
+  header h5 {
+    color: $gray-light;
+    text-transform: uppercase;
+  }
+  .content + p {
+    font-size:1.25em;
+  }
+}
+
+.block {
+  border-bottom: 4px double $gray-light;
+  margin: 3em 0;
+  padding:2em 0;
 }

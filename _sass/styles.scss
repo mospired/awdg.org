@@ -1,76 +1,11 @@
 // styles.scss
 
+@import 'variables','../bower_components/bootstrap-sass/lib/bootstrap.scss','scaffold','theme';
 
-@import "variables","libs","scaffold";
-
-$footerheight: 100px;
-$container-border: 1px solid darken($brand-primary, .5);
-
-html,body {
-  height: 100%;
-}
-
-#wrap {
-  min-height: 100%;
-  height: auto;
-  margin: 0 auto (-$footerheight);
-  padding: 0 0 $footerheight;
-}
-
-nav {
-  #brand img {
-    margin:1em 3em 1em 0;
-    width:64px;
-  }
-}
-#page {
-  @extend .container;
-  padding-top:$navbar-height + 40px;
-  padding-bottom:5em;
-  #content {
-    @include make-sm-column(8);
-  }
-  #side {
-    @include make-sm-column(3);
-    @extend .col-sm-offset-1;
-  }
-}
-
-.offsite-buttons {
-  border-top: $container-border;
-  clear: both;
-  margin-top:3em;
-  padding-top:1em;
-  a {
-    @extend .btn;
-    @extend .btn-default;
-    @extend .btn-sm;
-    margin-bottom:10px;
-  }
-}
 
 .block {
   clear:both;
 }
-
-.section-header {
-  border-bottom:1px solid $brand-primary;
-  margin-bottom: 2em;
-}
-
-.welcome {
-  figure {
-    @extend .well;
-  }
-  figcaption {
-    color: $gray;
-    padding:1em;
-    p:first-of-type {
-      font-weight:bold;
-    }
-  }
-}
-
 
 
 .sponsors {
@@ -127,20 +62,12 @@ nav {
 
 article.post-page {
 
-  .post-header {
-    @extend .section-header;
-  }
-
   .post {
     border-bottom: 2px solid #eee;
     margin-bottom: 3em;
     p:first-of-type {
       @extend .lead;
     }
-  }
-
-  .post-pubdate {
-    color:$gray;
   }
 
   figure {

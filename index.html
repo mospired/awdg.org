@@ -4,23 +4,25 @@ title: Welcome Atlanta Webbies!
 home: true
 ---
 
-<div class="welcome block">
+<div class="welcome">
   <h1>Atlanta Web Design Group</h1>
   <h4>The group for Atlanta area people who make Websites.</h4>
   <figure>
     <img src="http://awdg.s3.amazonaws.com/event-assets/webbies-800.jpg" class="img-responsive img-rounded">
     <figcaption>
-      <p>Markup, style, typography, e-commerce, Web apps, code, and creativity are all valid topics here.</p>
-      <p>We aim to provide a place for Web professionals from all over the Atlanta area to meet new people, exchange ideas, learn new things, and have a little fun.</p>
+      <h3>Markup, style, typography, code, and creativity.</h3>
+      <p>We are the community for Web professionals from all over the Atlanta area to meet new people, exchange ideas, learn new things, and have a little fun.</p>
     </figcaption>
   </figure>
 </div>
 
-<div class="block">
-  <hgroup class="section-header">
-    <h2>Upcoming Events</h2>
-    <h4>The where and when of Atlanta&rsquo;s web community</h4>
-  </hgroup>
+<div>
+  <header>
+    <hgroup class="section-header">
+      <h1>Upcoming Events</h1>
+      <h5>The who, what, where, and when of Atlanta&rsquo;s web community</h5>
+    </hgroup>
+  </header>
   {% for page in site.pages %}
   {% capture page_date %}{{ page.date | date: '%s' | plus: 0 }}{% endcapture %}
   {% capture now %}{{ site.time | date: '%s' | plus: 0 }}{% endcapture %}
