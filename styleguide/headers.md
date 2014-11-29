@@ -1,22 +1,13 @@
 ---
 layout: styleguide
-title: Style Guide // Header Modules
-pid: style
+title: Headers
+pid: styleguide
+weight: 2
 ---
 
 # Header Modules
 
-The basic structure of a Header module is simple. It requires a `<header>` element containing one `<hgroup>` element, which should contain at least one `<hX>` element (preferably an `<h1>` containing the Page Title accessed by `{% raw %}{{ page.title }}{% endraw %}`).
-
-```
-<header>
-  <hgroup>
-    <h1>{% raw %}{{ page.title }}{% endraw %}</h1>
-  </hgroup>
-</header>
-```
-
-In this case the `<header>` element extends `.row`, and `<hgroup>` extends `.col-sm-12`.
+The basic structure of a Header module is simple. It requires a `<header>` element containing one `<hgroup>` element, which should contain at least one `<hX>` element (preferably an `<h1>` containing the Page Title accessed by `{% raw %}{{ page.title }}{% endraw %}`). In this case the `<header>` element extends `.row`, and `<hgroup>` extends `.col-sm-12`.
 
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -29,18 +20,18 @@ In this case the `<header>` element extends `.row`, and `<hgroup>` extends `.col
       </hgroup>
     </header>
   </div>
-</div>
-
-They can also have a subheader using a `<h4>` element for extra info.
-
-```
+  <div class="panel-footer">
+    {% highlight html %}
 <header>
   <hgroup>
     <h1>{% raw %}{{ page.title }}{% endraw %}</h1>
-    <h4>Supplimental information about the page or section goes here.</h4>
   </hgroup>
 </header>
-```
+    {% endhighlight %}
+  </div>
+</div>
+
+They can also have a subheader using a `<h4>` element for extra info.
 
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -54,6 +45,16 @@ They can also have a subheader using a `<h4>` element for extra info.
       </hgroup>
     </header>
   </div>
+  <div class="panel-footer">
+    {% highlight html %}
+<header>
+  <hgroup>
+    <h1>{% raw %}{{ page.title }}{% endraw %}</h1>
+    <h4>Supplimental information about the page or section goes here.</h4>
+  </hgroup>
+</header>
+{% endhighlight %}
+</div>
 </div>
 
 
@@ -62,15 +63,6 @@ They can also have a subheader using a `<h4>` element for extra info.
 ## Post Pages
 
 Post pages add a publication date to the `<hgroup>` using a `<h5>` element.
-
-```
-<header>
-  <hgroup>
-    <h5>{{ page.date | date: "%B %d, %Y"}}</h5>
-    <h1>{% raw %}{{ page.title }}{% endraw %}</h1>
-  </hgroup>
-</header>
-```
 
 <div class="panel panel-default">
   <div class="panel-heading">
@@ -84,6 +76,16 @@ Post pages add a publication date to the `<hgroup>` using a `<h5>` element.
       </hgroup>
     </header>
   </div>
+  <div class="panel-footer">
+    {% highlight html %}
+<header>
+  <hgroup>
+    <h5>{{ page.date | date: "%B %d, %Y"}}</h5>
+    <h1>{% raw %}{{ page.title }}{% endraw %}</h1>
+  </hgroup>
+</header>
+{% endhighlight %}
+  </div>
 </div>
 
 ----
@@ -95,7 +97,24 @@ There will be a `<div>` element which provides a place for buttons, links, and o
 
 In this case, `<header>` element extends `.row` as before, but `<hgroup>` extends `.col-sm-9` and the `<div>` extends `.col-sm-3`
 
-```
+#### The rendered header module for an event looks like this:
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Event Header Module Example</h3>
+  </div>
+  <div class="panel-body event">
+    <header>
+      <hgroup>
+        <h1>Event Title</h1>
+        <h4><span class="datetime">October 02, 2014 - 7:00 PM</span> // <a class="location" href="#">Venue Name</a></h4>
+      </hgroup>
+      <div>
+        <a href="#" class="rsvp-button"><i class="fa fa-check-square"></i> RSVP Now</a>
+      </div>
+    </header>
+  </div>
+  <div class="panel-footer">
+{% highlight html %}
 <header>
   <hgroup>
     <h1>{% raw %}{{ page.title }}{% endraw %}</h1>
@@ -105,11 +124,15 @@ In this case, `<header>` element extends `.row` as before, but `<hgroup>` extend
     <a href="{% raw %}{{ page.rsvp_url }}{% endraw %}" class="rsvp-button"><i class="fa fa-check-square"></i> RSVP Now</a>
   </div>
 </header>
-```
+{% endhighlight %}
+  </div>
+</div>
 
-Here's the corresponding Sass, which can be found in [_scaffold.scss](https://github.com/AWDG/awdg.org/blob/master/_sass/_scaffold.scss).
+### Header Sass
 
-```
+Here's the corresponding Sass, which can be found in [_scaffold.scss](https://github.com/AWDG/awdg.org/blob/gh-pages/_sass/_scaffold.scss).
+
+{% highlight scss %}
 section header {
   @include make-row();
   border-bottom: 1px solid $brand-primary;
@@ -129,22 +152,4 @@ section .event header {
     text-align: right;
   }
 }
-```
-
-#### The rendered header module for an event looks like this:
-<div class="panel panel-default">
-  <div class="panel-heading">
-    <h3 class="panel-title">Event Header Module Example</h3>
-  </div>
-  <div class="panel-body event">
-    <header>
-      <hgroup>
-        <h1>Event Title</h1>
-        <h4><span class="datetime">October 02, 2014 - 7:00 PM</span> // <a class="location" href="#">Venue Name</a></h4>
-      </hgroup>
-      <div>
-        <a href="#" class="rsvp-button"><i class="fa fa-check-square"></i> RSVP Now</a>
-      </div>
-    </header>
-  </div>
-</div>
+{% endhighlight %}

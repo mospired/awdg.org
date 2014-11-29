@@ -45,6 +45,39 @@ nav {
   }
 }
 
+.description {
+  margin-bottom: 2em;
+  p:first-of-type {
+    @extend .lead;
+  }
+  img {
+    @extend .img-responsive;
+  }
+}
+
+///////////////////////////////////////////////////////////
+// Event Modules
+
+.event {
+  .speaker {
+    @include make-row();
+    .speaker-photo {
+      @include make-sm-column(3);
+      img {
+        @extend .img-rounded;
+        @extend .img-responsive;
+      }
+    }
+    .speaker-data {
+      @include make-sm-column(9);
+    }
+  }
+}
+
+
+
+////////////////
+// For the Styleguide
 .block {
   border-bottom: 4px double $gray-light;
   margin: 3em 0;
