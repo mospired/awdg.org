@@ -25,9 +25,10 @@ Then install Bower. It depends on [Node](http://nodejs.org/) and [npm](http://np
 
 **Now that things are installed**
 
-Move into your awdg.org directory and start the Jekyll server.
+Move into your awdg.org directory, install bower dependancies and start the Jekyll server.
 
     cd awdg.org
+    bower install
     jekyll serve -w
 
 Now you can view your out-of-the-box website by going to [http://localhost:9000](http://localhost:9000).
