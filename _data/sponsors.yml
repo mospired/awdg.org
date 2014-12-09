@@ -30,7 +30,7 @@
 
 - name: MailChimp
   tagline:
-  url: http://www.maiolchimp.com
+  url: http://www.mailchimp.com
   logo: mailchimp.png
 
 - name: Polygon
@@ -46,4 +46,4 @@
 - name: Strongbox West
   tagline:
   url: http://www.strongboxwest.com
-  logo: strongbox.png
+  logo: strongboxwest.png

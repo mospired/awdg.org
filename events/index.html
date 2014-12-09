@@ -1,8 +1,14 @@
 ---
 layout: default
-title: Upcoming Events
-pid: event
+title: Events
+pid: event-list
 ---
+<header>
+  <hgroup>
+    <h1>Upcoming Events</h1>
+    <h5>The who, what, where, and when of Atlanta&rsquo;s web community.</h5>
+  </hgroup>
+</header>
 
 {% for page in site.pages %}
 {% capture page_date %}{{ page.date | date: '%s' | plus: 0 }}{% endcapture %}
@@ -10,7 +16,7 @@ pid: event
 {% if page.pid == 'event' and page_date >= now %}
 <div class="row">
   <div class="col-md-3">
-    <img src="/img/{{ page.photo }}" class="img-responsive img-rounded">
+    <img src="{{ site.event-photo-url }}{{ page.photo }}" class="img-responsive img-rounded">
   </div>
   <div class="col-md-9">
     <h3><a href="{{ page.url }}"><strong>{{ page.title }}</strong></a></h3>
@@ -21,3 +27,24 @@ pid: event
 <hr>
 {% endif %}
 {% endfor %}
+
+<hgroup class="section-header">
+  <h4>Previous Events</h4>
+</hgroup>
+<div class="row">
+  {% for page in site.pages %}
+  {% capture page_date %}{{ page.date | date: '%s' | plus: 0 }}{% endcapture %}
+  {% capture now %}{{ site.time | date: '%s' | plus: 0 }}{% endcapture %}
+  {% if page.pid == 'event' and page_date <= now %}
+  <div class="col-xs-6 col-md-3">
+    <div class="thumbnail">
+      <a href="{{ page.url }}"><img src="{{ site.event-photo-url }}{{ page.photo }}" class="img-responsive img-rounded"></a>
+      <div class="caption">
+        <h5><a href="{{ page.url }}">{{ page.title }}</a></h5>
+        <p><small>{{ page.date  | date: "%B %d, %Y" }}</small></p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>

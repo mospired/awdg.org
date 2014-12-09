@@ -1,10 +1,85 @@
 // theme.scss
 
-@import 'variables','../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss','scaffold';
+@import "variables","libs","scaffold";
 
 nav {
   #brand img {
     margin:1em 3em 1em 0;
-    width:72px;
+    width:64px;
   }
+}
+
+.welcome {
+  figure {
+    @extend .well;
+  }
+  figcaption {
+    color: $gray;
+    padding:1em;
+    p:first-of-type {
+      font-weight:bold;
+    }
+  }
+}
+
+.offsite-buttons {
+  border-top: $container-border;
+  clear: both;
+  margin-top:3em;
+  padding-top:1em;
+  a {
+    @extend .btn;
+    @extend .btn-default;
+    @extend .btn-sm;
+    margin-bottom:10px;
+  }
+}
+
+.post {
+  header h5 {
+    color: $gray-light;
+    text-transform: uppercase;
+  }
+  .content + p {
+    font-size:1.25em;
+  }
+}
+
+.description {
+  margin-bottom: 2em;
+  p:first-of-type {
+    @extend .lead;
+  }
+  img {
+    @extend .img-responsive;
+  }
+}
+
+///////////////////////////////////////////////////////////
+// Event Modules
+
+.event {
+  .speaker {
+    @include make-row();
+    .speaker-photo {
+      @include make-sm-column(3);
+      img {
+        @extend .img-rounded;
+        @extend .img-responsive;
+      }
+    }
+    .speaker-data {
+      @include make-sm-column(9);
+    }
+  }
+}
+
+
+
+////////////////
+// For the Styleguide
+.block {
+  border-bottom: 4px double $gray-light;
+  margin: 3em 0;
+  padding:2em 0;
 }

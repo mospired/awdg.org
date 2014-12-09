@@ -1,44 +1,864 @@
 ---
-layout: pedro
-title: Style Guide
-pid: style
+layout: styleguide
+title: General Elements
+pid: styleguide
+weight: 1
 ---
+<header>
+  <hgroup>
+    <h1>AWDG Style Guide</h1>
+  </hgroup>
+</header>
+
 
 <div class="block">
-  <h1>Style Guide</h1>
-  <p>Use these elements to build out your event website.</p>
+      <div id="awdg-button"></div>
+      
+      <div class="row">
+        <div class="title">
+          <h3>Buttons</h3>
+        </div>
 
-  <h3>Buttons</h3>
-  
-  <p>
-    <button type="button" class="btn btn-default">Default</button>
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-info">Info</button>
-  </p>
-  <p>
-    <button type="button" class="btn btn-default active">Default</button>
-    <button type="button" class="btn btn-primary active">Primary</button>
-    <button type="button" class="btn btn-info active">Info</button>
-  </p>
-  <p>
-    <button type="button" class="btn btn-default" disabled="disabled">Default</button>
-    <button type="button" class="btn btn-primary" disabled="disabled">Primary</button>
-    <button type="button" class="btn btn-info" disabled="disabled">Info</button>
-  </p>
+        <div class="component_content">
+          <p>
+            Larger than the standard <a href="http://getbootstrap.com/css/#buttons">Bootstrap buttons</a>, <code>btn-hg</code> which will be used for the main call to action buttons on the page:
+          </p>
+          <p>
+            <button class="btn btn-hg btn-primary">Huge Button</button>
+          </p>
+<pre class="prettyprint">
+&lt;button class="btn btn-hg btn-primary"&gt;
+  Boss Button
+&lt;/button&gt;
+</pre>
 
-  <h3>Button Sizes</h3>
-  <p>
-    <button type="button" class="btn btn-primary btn-lg">Large button</button>
-    <button type="button" class="btn btn-primary">Default button</button>
-    <button type="button" class="btn btn-primary btn-sm">Small button</button>
-    <button type="button" class="btn btn-primary btn-xs">Extra small button</button>
-  </p>
+          <p>
+            For forms and situations in need of higher contrast, <code>btn-embossed</code> is an option.
+          </p>
+          <p>
+            <button class="btn btn-embossed btn-primary">Embossed Button</button>
+          </p>
+<pre class="prettyprint">
+&lt;button class="btn btn-embossed btn-primary"&gt;
+  Embossed Button
+&lt;/button&gt;
+</pre>
 
-  <h3>Button Block</h3>
-  <div class="well" style="max-width: 400px; margin: 0 auto 10px;">
-    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-    <button type="button" class="btn btn-default btn-lg btn-block">Block level button</button>
-  </div>
+          <p>
+            Wider buttons for matching input length or to keep a div from looking unbalanced:
+          </p>
+          <p>
+            <button class="btn btn-wide btn-primary mrm">Save</button>
+            <button class="btn btn-wide btn-default">Cancel</button>
+          </p>
+<pre class="prettyprint">
+&lt;button class="btn btn-default btn-wide"&gt;
+  Cancel
+&lt;/button&gt;
+</pre>
+
+          <p>
+            Used for calling action to onlyl part of the button text <code>btn-tip</code>:
+          </p>
+          <p>
+            <button class="btn btn-primary">
+              Save
+              <span class="btn-tip">$300</span>
+            </button>
+          </p>
+<pre class="prettyprint">
+&lt;button class="btn btn-primary"&gt;
+  Save
+  &lt;span class="btn-tip"&gt;$300&lt;/span&gt;
+&lt;/button&gt;
+</pre>
+
+          <p>
+            For forms, warnings, levels, etc., various colors:
+          </p>
+          <p>
+            <button class="btn btn-default mrs">Default</button>
+            <button class="btn btn-primary mrs">Primary</button>
+            <button class="btn btn-info mrs">Info</button>
+            <button class="btn btn-danger mrs">Danger</button>
+          </p>
+          <p>            
+            <button class="btn btn-success mrs">Success</button>
+            <button class="btn btn-warning mrs">Warning</button>
+            <button class="btn btn-inverse mrs">Inverse</button>
+          </p>
+<pre class="prettyprint">
+&lt;button class="btn btn-default"&gt;Default&lt;/button&gt;
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;
+&lt;button class="btn btn-info"&gt;Info&lt;/button&gt;
+&lt;button class="btn btn-danger"&gt;Danger&lt;/button&gt;
+&lt;button class="btn btn-success"&gt;Success&lt;/button&gt;
+&lt;button class="btn btn-warning"&gt;Warning&lt;/button&gt;
+&lt;button class="btn btn-inverse"&gt;Inverse&lt;/button&gt;
+</pre>
+
+        </div>        
+      </div><!-- /.row -->
+      
+      <div id="awdg-checkbox"></div>
+      
+      <div class="row">        
+        <div class="title">
+          <h3>Checkboxes</h3>
+        </div>
+
+        <div class="component_content">
+          <p>
+            Custom checkboxes and disabled states, using javascript:
+          </p>
+          <label class="checkbox" for="checkbox1">
+            <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+            Checkbox
+          </label>
+          <label class="checkbox" for="checkbox2">
+            <input type="checkbox" value="" id="checkbox2" checked="checked" data-toggle="checkbox">
+            Checkbox
+          </label>
+          <label class="checkbox" for="checkbox3">
+            <input type="checkbox" value="" id="checkbox3" data-toggle="checkbox" disabled="">
+            Checkbox
+          </label>
+          <label class="checkbox" for="checkbox4">
+            <input type="checkbox" value="" id="checkbox4" checked="checked" data-toggle="checkbox" disabled="">
+            Checkbox
+          </label>
+
+          <h6>The Data Attributes:</h6>
+<pre class="prettyprint">
+&lt;label class="checkbox" for="checkbox1"&gt;
+  &lt;input type="checkbox" value="" id="checkbox1" data-toggle="checkbox"&gt;
+  Checkbox
+&lt;/label&gt;
+</pre>
+
+          <h6>Usage via JS:</h6>
+<pre class="prettyprint">
+$(':checkbox').checkbox();
+</pre>
+
+          <div class="pvm">
+            <h6>Methods:</h6>
+          </div>
+          <p>
+            <strong>.checkbox('toggle')</strong>
+            <br/>
+            toggles the checkbox state from <span class="text-info">checked</span>
+            to <span class="text-info">unchecked</span> and back.
+          </p>
+          <p>
+            <strong>.checkbox('check')</strong>
+            <br/>
+            sets the checkbox state to <span class="text-info">checked</span>.
+          </p>
+          <p>
+            <strong>.checkbox('uncheck')</strong>
+            <br/>
+            sets the checkbox state to <span class="text-info">unchecked</span>.
+          </p>
+<pre class="prettyprint">
+$(':checkbox').checkbox('check');
+</pre>
+
+          <div class="pbm ptl">
+            <h6>Events:</h6>
+          </div>
+          <p>
+            <strong>.on('toggle')</strong>
+            <br/>
+            Fired when the checkbox state changes between
+            <span class="text-info">checked</span> and
+            <span class="text-info">unchecked</span>.
+          </p>
+          <p>
+            <strong>.on('change')</strong>
+            <br/>
+            Same as <span class="text-info">toggle</span>.
+          </p>
+<pre class="prettyprint">
+$(':checkbox').on('toggle', function() {
+  // Do something
+});
+</pre>          
+          
+        </div> <!-- /.component_content -->
+      </div> <!-- /.row -->
+      
+      <div id="awdg-radio"></div>
+
+      <div class="row">
+        <div class="title">
+          <h3>Radio buttons</h3>
+        </div>
+
+        <div class="component_content">
+          <p>
+            Radio buttons with custom styles, also using javascript.
+          </p>
+          <label class="radio">
+            <input type="radio" name="group1" value="1" data-toggle="radio">
+            Radio is off
+          </label>
+          <label class="radio">
+            <input type="radio" name="group1" value="2" data-toggle="radio" checked>
+            Radio is on
+          </label>
+          <label class="radio">
+            <input type="radio" name="group2" value="1" data-toggle="radio" disabled>
+            Radio is off
+          </label>
+          <label class="radio">
+            <input type="radio" name="group2" value="2" data-toggle="radio" disabled checked>
+            Radio is on
+          </label>
+
+          <h6>The Data Attributes:</h6>
+<pre class="prettyprint">
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="group1" value="1" data-toggle="radio"&gt;
+  Radio is off
+&lt;/label&gt;
+
+&lt;label class="radio"&gt;
+  &lt;input type="radio" name="group1" value="2" data-toggle="radio" checked&gt;
+  Radio is on
+&lt;/label&gt;
+</pre>
+
+          <h6>The JS:</h6>
+<pre class="prettyprint">
+$(':radio').radio();
+</pre>
+
+          <div class="pvm">
+            <h6>Methods:</h6>
+          </div>
+          <p>
+            <strong>.radio('check')</strong>
+            <br/>
+            sets the radio button state to <span class="text-info">checked</span>.
+          </p>
+          <p>
+            <strong>.radio('uncheck')</strong>
+            <br/>
+            sets the radio state to <span class="text-info">unchecked</span>.
+          </p>
+<pre class="prettyprint">
+$(':radio').radio('check');
+</pre>
+
+          <div class="pbm ptl">
+            <h6>Events:</h6>
+          </div>
+          <p>
+            <strong>.on('toggle')</strong>
+            <br/>
+            Fired when the radio button state changes between
+            <span class="text-info">checked</span> and
+            <span class="text-info">unchecked</span>.
+          </p>
+          <p>
+            <strong>.on('change')</strong>
+            <br/>
+            Same as <span class="text-info">toggle</span> with just one difference &mdash; the event is fired for each radio button that gets a state change.
+          </p>
+<pre class="prettyprint">
+$(':radio').on('toggle', function() {
+  // Do something
+});
+</pre>
+        </div> <!-- /.component_content -->
+      </div> <!-- /.row -->
+
+    
+ 
+      <div id="awdg-dropdown"></div>
+    
+      <div class="row">
+        <div class="title">
+          <h3>Dropdown</h3>
+        </div>
+
+        <div class="component_content">
+          <p>
+            Standard <a href="http://getbootstrap.com/components/#dropdowns">Bootstrap dropdown</a> for <code>select</code>, <code>btn-group</code>, <code>nav-tabs</code> and more.
+          </p>
+
+          <p>
+            Use <code>dropdown-arrow</code> if a caret (small triangle) is needed.
+          </p>
+
+          <select name="info" class="mbn">
+            <optgroup label="Profile">
+              <option value="0">My Profile</option>
+              <option value="1">My Friends</option>
+            </optgroup>
+            <optgroup label="System">
+              <option value="2">Messages</option>
+              <option value="3">My Settings</option>
+              <option value="4" class="highlighted">Logout</option>
+            </optgroup>
+          </select>
+
+          <hr/>
+          
+          <div class="row">
+            <div class="col-md-3">
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown<span class="caret"></span></button>
+                <span class="dropdown-arrow dropdown-arrow-inverse"></span>
+                <ul class="dropdown-menu dropdown-inverse">
+                  <li><a href="#fakelink">Sub Menu Element</a></li>
+                  <li><a href="#fakelink">Sub Menu Element</a></li>
+                  <li><a href="#fakelink">Sub Menu Element</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+
+          <div class="pvl">
+<pre class="prettyprint">
+&lt;!-- Default look --&gt;
+&lt;div class="dropdown"&gt;
+  &lt;button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;span class="dropdown-arrow"&gt;&lt;/span&gt;
+  &lt;ul class="dropdown-menu"&gt;
+    &lt;li&gt;&lt;a href="#fakelink">Sub Menu Element&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#fakelink">Sub Menu Element&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#fakelink">Sub Menu Element&lt;/a&gt;&lt;/li&gt;
+  &lt;/u&gt;
+&lt;/div&gt;
+
+&lt;!-- Inverse look --&gt;
+&lt;div class="dropdown"&gt;
+  &lt;button class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown&lt;span class="caret"&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;span class="dropdown-arrow dropdown-arrow-inverse"&gt;&lt;/span&gt;
+  &lt;ul class="dropdown-menu dropdown-inverse"&gt;
+    &lt;li&gt;&lt;a href="#fakelink">Sub Menu Element&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#fakelink">Sub Menu Element&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#fakelink">Sub Menu Element&lt;/a&gt;&lt;/li&gt;
+  &lt;/u&gt;
+&lt;/div&gt;
+</pre>
+          </div>
+
+          <p>
+            Highlight information using either <code>selected</code> or <code>highlighted</code>:
+          </p>
+<pre class="prettyprint">
+&lt;ul class="dropdown-menu"&gt;
+  &lt;li class="selected"&gt;
+    &lt;a href="#"&gt;Item&lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li class="highlighted"&gt;
+    &lt;a href="#"&gt;Item&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+        </div> <!-- /.component_content -->
+      </div> <!-- /.row -->
+
+      <div id="awdg-input"></div>
+
+      <div class="row">
+        <div class="title">
+          <h3>Input</h3>
+        </div>
+
+        <div class="component_content">
+          <p>
+            Restyled <a href="http://getbootstrap.com/css/#forms">Bootstrap input</a>. Add <span class="text-info">flat</span> as an additional class to completely remove the borders:
+          </p>
+          
+          <div class="row">
+            <div class="col-lg-5">
+              <input type="text" value="" placeholder="Enter something" class="form-control" />
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-5">
+              <input type="text" value="" placeholder="Enter something" class="form-control flat" />
+            </div>
+          </div>
+<pre class="prettyprint mtl">
+&lt;!-- Default input --&gt;
+&lt;input type="text" placeholder="Enter something" class="form-control" /&gt;
+
+&lt;!-- Without borders --&gt;
+&lt;input type="text" placeholder="Enter something" class="form-control flat" /&gt;
+</pre>
+
+          <p>And few sizes:</p>
+          <div class="row">
+            <div class="col-lg-5">
+              <input type="text" value="" placeholder="Huge" class="form-control input-hg" />
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-5">
+              <input type="text" value="" placeholder="Large" class="form-control input-lg" />
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-5">
+              <input type="text" value="" placeholder="Default" class="form-control" />
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-lg-5">
+              <input type="text" value="" placeholder="Small" class="form-control input-sm" />
+            </div>
+          </div>
+<pre class="prettyprint mtl">
+&lt;input type="text" class="form-control input-hg" placeholder="Huge" /&gt;
+&lt;input type="text" class="form-control input-lg" placeholder="Large" /&gt;
+&lt;input type="text" class="form-control" placeholder="Default" /&gt;
+&lt;input type="text" class="form-control input-sm" placeholder="Small" /&gt;
+</pre>
+
+          <p>With icon inside:</p>
+          <div class="row">
+            <div class="col-lg-5">
+              <div class="form-group">
+                <input type="text" value="" placeholder="With icon" class="form-control" />
+                <span class="input-icon awdg-check-inverted"></span>
+              </div>
+            </div>            
+          </div>
+<pre class="prettyprint mtm">
+&lt;div class="form-group"&gt;
+  &lt;input type="text" class="form-control" placeholder="With icon" /&gt;
+  &lt;span class="input-icon awdg-check-inverted"&gt;&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+
+        <p>Input with append/prepend options:</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">@</span>
+                  <input class="form-control" type="text" placeholder="Prepend" />
+                </div>
+              </div>              
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <div class="input-group">                 
+                  <input class="form-control" type="text" placeholder="Append" />
+                  <span class="input-group-addon">@</span>
+                </div>
+              </div>              
+            </div>
+          </div>
+
+<pre class="prettyprint mtm">
+&lt;!-- Prepend --&gt;
+&lt;div class="form-group"&gt;
+  &lt;div class="input-group"&gt;
+    &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
+    &lt;input type="text" class="form-control" placeholder="Prepend" /&gt;
+  &lt;/div&gt;  
+&lt;/div&gt;
+
+&lt;!-- Append --&gt;
+&lt;div class="form-group"&gt;
+  &lt;div class="input-group"&gt;
+    &lt;input type="text" class="form-control" placeholder="Append" /&gt;
+    &lt;span class="input-group-addon"&gt;@&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+          <p>
+            Various color styles and disabled state:
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group has-error">
+                  <input class="form-control" type="text" placeholder="Error" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group has-warning">
+                  <input class="form-control" type="text" placeholder="Warning" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group has-success">
+                  <input class="form-control" type="text" placeholder="Success" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Disabled" disabled />
+                </div>
+              </div>
+            </div>
+          </p>
+
+          
+        </div> <!-- /.component_content -->
+      </div> <!-- /.row -->
+
+      <div id="awdg-navbar"></div>
+
+      <div class="row">
+        <div class="component_content">
+    
+
+        <p>Inline forms:</p>
+        <nav role="navigation" class="navbar navbar-inverse navbar-embossed">
+          <div class="navbar-header">
+            <button data-target="#navbar-collapse-04" data-toggle="collapse" class="navbar-toggle" type="button">
+              <span class="sr-only">Toggle navigation</span>
+            </button>
+            <a href="#" class="navbar-brand">AWDG</a>
+          </div>
+          <div id="navbar-collapse-04" class="collapse navbar-collapse">
+            <form role="search" class="navbar-form navbar-left">
+              <div class="form-group">
+                <input type="text" placeholder="Search" class="form-control">
+              </div>
+              <button class="btn btn-default" type="submit">Submit</button>
+            </form>
+          </div>
+        </nav>  
+
+<pre class="prettyprint mvl">
+&lt;form role="search" class="navbar-form navbar-left"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;input type="text" placeholder="Search" class="form-control"&gt;
+  &lt;/div&gt;
+  &lt;button class="btn btn-default" type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</pre>
+
+        <p>Buttons:</p>
+        <nav role="navigation" class="navbar navbar-inverse navbar-embossed">
+          <div class="navbar-header">
+            <button data-target="#navbar-collapse-05" data-toggle="collapse" class="navbar-toggle" type="button">
+            </button>
+            <a href="#" class="navbar-brand">AWDG</a>
+          </div>
+          <div id="navbar-collapse-05" class="collapse navbar-collapse">
+            <button class="btn btn-default navbar-btn" type="button">Sign in</button>
+            <button class="btn btn-default navbar-btn btn-sm" type="button">Sign in</button>
+            <button class="btn btn-default navbar-btn btn-xs" type="button">Sign in</button>
+          </div>
+        </nav>  
+        
+<pre class="prettyprint mvl">
+&lt;!-- Default Navbar Button --&gt;
+&lt;button class="btn btn-default navbar-btn" type="button"&gt;Sign in&lt;/button&gt;
+&lt;!-- Small Navbar Button --&gt;
+&lt;button class="btn btn-default navbar-btn btn-sm" type="button"&gt;Sign in&lt;/button&gt;
+&lt;!-- Extra Small Navbar Button --&gt;
+&lt;button class="btn btn-default navbar-btn btn-xs" type="button"&gt;Sign in&lt;/button&gt;
+</pre>                      
+
+        <p>Text:</p>
+        <nav role="navigation" class="navbar navbar-inverse navbar-embossed">
+          <div class="navbar-header">
+            <button data-target="#navbar-collapse-06" data-toggle="collapse" class="navbar-toggle" type="button">
+            </button>
+            <a href="#" class="navbar-brand">AWDG</a>
+          </div>
+          <div id="navbar-collapse-06" class="collapse navbar-collapse">
+            <p class="navbar-text">Signed in as Ron Burgundy</p>
+          </div>
+        </nav>  
+        
+<pre class="prettyprint mvl">
+&lt;p class="navbar-text"&gt;Signed in as Ron Burgundy&lt;/p&gt;
+</pre>
+
+        <p>Non-nav links:</p>
+        <nav role="navigation" class="navbar navbar-inverse navbar-embossed">
+          <div class="navbar-header">
+            <button data-target="#navbar-collapse-07" data-toggle="collapse" class="navbar-toggle" type="button">
+            </button>
+            <a href="#" class="navbar-brand">AWDG</a>
+          </div>
+          <div id="navbar-collapse-07" class="collapse navbar-collapse">
+            <p class="navbar-text navbar-right">Signed in as <a class="navbar-link" href="#">Ron Burgundy</a></p>
+          </div>
+        </nav>  
+        
+<pre class="prettyprint mvl">
+&lt;p class="navbar-text navbar-right"&gt;Signed in as &lt;a class="navbar-link" href="#"&gt;Ron Burgundy&lt;/a&gt;&lt;/p&gt;
+</pre>
+
+          <p>New and Unread indicators:</p>
+          <nav class="navbar navbar-inverse navbar-embossed" role="navigation">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-02">
+                <span class="sr-only">Toggle navigation</span>
+              </button>
+              <a class="navbar-brand" href="#">AWDG</a>
+            </div>
+          
+            <div class="collapse navbar-collapse" id="#navbar-collapse-02">
+              <ul class="nav navbar-nav">           
+                <li><a href="#">Messages<span class="navbar-unread">1</span></a></li>
+                <li><a href="#">About Us<span class="navbar-new">1</span></a></li>
+               </ul>            
+            </div><!-- /.navbar-collapse -->
+          </nav><!-- /navbar -->
+          
+<pre class="prettyprint mvl">
+&lt;!-- ... --&gt;
+  &lt;ul class="nav navbar-nav"&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt;
+        Menu item
+        &lt;!-- Indicator with number --&gt;
+        &lt;span class="navbar-new"&gt;2&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;!-- ... --&gt;
+</pre>
+
+<pre class="prettyprint mvl">
+&lt;!-- ... --&gt;
+  &lt;ul class="nav navbar-nav"&gt;
+    &lt;li&gt;
+      &lt;a href="#"&gt;
+        Menu item
+        &lt;!-- Indicator without number --&gt;
+        &lt;span class="navbar-unread"&gt;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;!-- ... --&gt;
+</pre>
+
+          <p>Fixed to top:</p>
+<pre class="prettyprint mvl">
+&lt;nav class="navbar navbar-default navbar-fixed-top" role="navigation"&gt;
+&lt;!-- Navbar content --&gt;
+&lt;/nav&gt;
+</pre>  
+
+          <p>Fixed to bottom:</p>
+<pre class="prettyprint mvl">
+&lt;nav class="navbar navbar-default navbar-fixed-bottom" role="navigation"&gt;
+&lt;!-- Navbar content --&gt;
+&lt;/nav&gt;
+</pre>  
+
+          <p>Static top:</p>
+<pre class="prettyprint mvl">
+&lt;nav class="navbar navbar-default navbar-static-top" role="navigation"&gt;
+&lt;!-- Navbar content --&gt;
+&lt;/nav&gt;
+</pre>
+
+          <div id="awdg-pager"></div>
+        </div> <!-- /.component_content -->
+      </div> <!-- /.row -->
+
+      <div id="awdg-pager"></div>
+
+      <div class="row">
+        <div class="title">
+          <h3>Pager</h3>
+        </div>
+        <div class="component_content">
+          <p>
+            Navigating to the next/prev item.
+          </p>
+          <ul class="pager">
+            <li class="previous">
+              <a href="#fakelink">
+                <i class="awdg-arrow-left"></i>
+                <span>All messages</span>
+              </a>
+            </li>
+            <li class="next">
+              <a href="#fakelink">
+                <i class="awdg-arrow-right"></i>
+              </a>
+            </li>
+          </ul>
+
+<pre class="prettyprint mvl">
+&lt;ul class="pager"&gt;
+  &lt;li class="previous"&gt;
+    &lt;a href="#"&gt;
+      &lt;span&gt;
+        &lt;i class="awdg-arrow-left"&gt;&lt;/i&gt;
+        All messages
+      &lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+
+  &lt;li class="next"&gt;
+    &lt;a href="#"&gt;
+      &lt;i class="awdg-arrow-right"&gt;&lt;/i&gt;
+    &lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+          <div id="awdg-pagination"></div>
+        </div> <!-- /.component_content -->
+      </div> <!-- /.row -->
+
+      <div id="awdg-pagination"></div>
+
+      <div class="row">
+        <div class="title">
+          <h3>Pagination</h3>
+        </div>
+        <div class="component_content">
+          <p>
+            Numeric <a href="http://getbootstrap.com/components/#pagination">Bootstrap pagination</a>.
+          </p>
+          <div class="pagination">
+            <ul>
+              <li class="previous"><a href="#fakelink" class="awdg-arrow-left"></a></li>
+              <li class="active"><a href="#fakelink">1</a></li>
+              <li><a href="#fakelink">2</a></li>
+              <li><a href="#fakelink">3</a></li>
+              <li><a href="#fakelink">4</a></li>
+              <li><a href="#fakelink">5</a></li>
+              <li><a href="#fakelink">6</a></li>
+              <li><a href="#fakelink">7</a></li>
+              <li><a href="#fakelink">8</a></li>
+              <li><a href="#fakelink">9</a></li>
+              <li><a href="#fakelink">10</a></li>
+              <li class="next"><a href="#fakelink" class="awdg-arrow-right"></a></li>
+            </ul>
+          </div>
+
+<pre class="prettyprint mvl">
+&lt;div class="pagination"&gt;
+  &lt;ul&gt;
+    &lt;li class="previous"&gt;
+      &lt;a href="#" class="awdg-arrow-left"&gt;&lt;/a&gt;
+    &lt;/li&gt;
+
+    &lt;li class="active"&gt;&lt;a href="#fakelink"&gt;1&lt;/a&gt;&lt;/li&gt;
+    ...
+    &lt;li&gt;&lt;a href="#fakelink"&gt;10&lt;/a&gt;&lt;/li&gt;
+
+    &lt;li class="next"&gt;
+      &lt;a href="#" class="awdg-arrow-right"&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+
+        </div> <!-- /.component_content -->
+      </div> <!-- /.row -->
+
+      <div id="awdg-progress"></div>
+
+      <div class="row">
+        <div class="title">
+          <h3>Progress</h3>
+        </div>
+        <div class="component_content">
+          <p>
+            Progress bar based on <a href="http://getbootstrap.com/components/#progress">Bootstrap progress</a>.
+          </p>
+          <div class="progress">
+            <div class="progress-bar" style="width: 45%;"></div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 40%;"></div>
+            <div class="progress-bar progress-bar-warning" style="width: 10%;"></div>
+            <div class="progress-bar progress-bar-danger" style="width: 10%;"></div>
+            <div class="progress-bar progress-bar-success" style="width: 10%;"></div>
+            <div class="progress-bar progress-bar-info" style="width: 10%;"></div>
+          </div>
+
+<pre class="prettyprint mvl">
+&lt;div class="progress"&gt;
+  &lt;div class="progress-bar" style="width: 40%;"&gt;&lt;/div&gt;
+  &lt;div class="progress-bar progress-bar-warning" style="width: 10%;"&gt;&lt;/div&gt;
+  &lt;div class="progress-bar progress-bar-danger" style="width: 10%;"&gt;&lt;/div&gt;
+  &lt;div class="progress-bar progress-bar-success" style="width: 10%;"&gt;&lt;/div&gt;
+  &lt;div class="progress-bar progress-bar-info" style="width: 10%;"&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+          <div id="awdg-select"></div>
+        </div> <!-- /.component_content -->
+      </div> <!-- /.row -->
+
+
+
+      <div id="awdg-switch"></div>
+
+      <div class="row">
+        <div class="title">
+          <h3>Switch</h3>
+        </div>
+        <div class="component_content">
+          <p>
+            On/Off switch instead of a checkbox. <span class="text-info">circle</span> (default) and <span class="text-info">square</span>.
+          </p>
+          <span class="mrl">
+            <input type="checkbox" checked data-toggle="switch" />
+          </span>
+          <input type="checkbox" data-toggle="switch" />
+
+          <hr/>
+
+          <div class="switch switch-square mrl"
+            data-on-label="<i class='awdg-check'></i>"
+            data-off-label="<i class='awdg-cross'></i>">
+            <input type="checkbox" />
+          </div>
+
+          <div class="switch switch-square"
+            data-on-label="<i class='awdg-check'></i>"
+            data-off-label="<i class='awdg-cross'></i>">
+            <input type="checkbox" checked />
+          </div>
+
+          <pre class="prettyprint mvl">
+          &lt;!-- Default switch --&gt;
+          &lt;input type="checkbox" checked data-toggle="switch" /&gt;
+
+          &lt;!-- Square switch --&gt;
+          &lt;div class="switch switch-square"&gt;
+            &lt;input type="checkbox" checked data-toggle="switch" /&gt;
+          &lt;/div&gt;
+
+          &lt;!-- Switch with customized icons --&gt;
+          &lt;div class="switch switch-square"
+            data-on-label="&lt;i class='awdg-check'&gt;&lt;/i&gt;"
+            data-off-label="&lt;i class='awdg-cross'&gt;&lt;/i&gt;"&gt;
+            &lt;input type="checkbox" /&gt;
+          &lt;/div&gt;
+          </pre>
+        </div> <!-- /.component_content -->
+      </div> <!-- /.row -->
+
+
+
+</div>
+<div class="block">
 
   <h3>Alerts</h3>
 
@@ -58,6 +878,9 @@ pid: style
     <button type="button" class="close pull-right"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
     <p>Your computer restarted <span>because of a problem</span>. Sorry for any inconvenience and appreciate your patience.</p>
   </div>
+
+</div>
+<div class="block">
 
   <h3>Tables</h3>
   <div class="table-responsive">
