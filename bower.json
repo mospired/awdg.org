@@ -23,7 +23,7 @@
     "speak",
     "sponsor",
     "styleguide",
-    "vendor",
+    "vendor"
   ],
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1",
