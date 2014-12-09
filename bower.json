@@ -10,9 +10,20 @@
   ],
   "ignore": [
     "**/.*",
+    "_*/",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "blog",
+    "css",
+    "events",
+    "img",
+    "join",
+    "js",
+    "speak",
+    "sponsor",
+    "styleguide",
+    "vendor",
   ],
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1",
