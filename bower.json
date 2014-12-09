@@ -10,7 +10,11 @@
   ],
   "ignore": [
     "**/.*",
-    "_*/",
+    "_data/*",
+    "_includes/*",
+    "_layouts/*",
+    "_plugins/*",
+    "_posts/*",
     "bower_components",
     "test",
     "tests",
@@ -23,7 +27,7 @@
     "speak",
     "sponsor",
     "styleguide",
-    "vendor"
+    "CNAME"
   ],
   "dependencies": {
     "bootstrap-sass-official": "~3.3.1",
